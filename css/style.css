@@ -1,14 +1,19 @@
 /* It has a light backgroud color */
 html, body{
     background-color: rgb(234, 238, 238);
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
+h1{
+    font-size: 2rem;
+}
 /* #########header part########## */
 .head{
     margin: 20px;
 }
 .fixed{
-    background-color: rgb(255, 139, 56);
+    background-color: #FF9500;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,7 +39,7 @@ html, body{
     align-items: center;
 }
 .logo{
-    background-color: rgb(255, 139, 56);
+    background-color: #FF9500;
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -68,24 +73,25 @@ html, body{
     align-items: center;
     border: none;
 }
-
 .navigation nav ul li a:hover {
-    background-color: rgb(255, 139, 56);
+    background-color: #FF9500;
     color: white;
 }
 
 .head hr {
-    border: 1px #dfdfdf solid;
+    border: 1px #F1F1F3 solid;
 }
 
+/* ###############main part############### */
+/* ########banner1######### */
+.main{
+    margin: 20px;
+}
 .banner1 {
     margin-top: 40px;
 }
-.slogan{
-    margin: 20px;
-}
 .unlock{
-    background-color: rgb(245, 240, 240);
+    background-color: #FCFCFD;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -94,20 +100,20 @@ html, body{
     border-radius: 5px;
     position: relative;
     padding-left: 20px;
+    border: #F1F1F3;
 }
 .sprinkle {
     position: absolute;
     top: -20px;
     left: -10px;
 }
-
-
 .unlock-logo{
     height: 50px;
     width: 50px;
 }
 .unlock .start{
-    color: rgb(255, 139, 56);
+    color:#FF9500;
+    ;
     padding-left: 5px;
 }
 .unlock .left{
@@ -116,8 +122,7 @@ html, body{
 }
 .with{
     padding: 20px 40px;
-    text-align: center;
-    
+    text-align: center; 
 }
 .with .online, .development{
     font-size: 2rem;
@@ -128,20 +133,207 @@ html, body{
 .links ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 .links ul li a{
     text-decoration: none;
     display: block;
-    width: 160px;
+    width: 200px;
     height: 60px;
     margin: 20px;
     border-radius: 5px;
-    background-color: rgb(245, 240, 240);
+    background-color: #FFFFFF;
     color: black;
     text-align: center;
     line-height: 60px;
+    border: #F1F1F3;
 }
 .links ul li a:hover{
-    background-color: rgb(255, 139, 56);
+    background-color: #FF9500;
     color: white;
+}
+.brand{
+    padding: 20px;
+    height: 80px;
+    border: #F1F1F3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FCFCFD ;
+}
+.brand .brand-boder{
+    width:auto;
+    border-right: 1px solid #F1F1F3;
+}
+
+/* ########banner2######### */
+.banner2{
+    margin: 40px 0;
+    height: 250px;
+    width: calc(100%-40px);
+    background-image: url(../images/brand2-s.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #########benefits####### */
+h1{
+    margin-bottom: 20px;
+}
+/* Benefits, courses and testimonials have the same begining. */
+.benefits p, .courses p, .testimonials p{
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+.benefits button,.courses button, .testimonials button{
+    background-color: #FCFCFD;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #F1F1F3;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.benefits .six{
+    background-color: #FCFCFD;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.benefits .order,.arrow {
+    display: flex;
+    justify-content: end;
+}
+.benefits .text h2{
+    text-align:start;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.benefits .arrow-border{
+    border-radius: 5px;
+    border: 1px solid #F1F1F3;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #########courses####### */
+.courses-choices .six{
+    background-color: #FCFCFD;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.courses-choices .six img{
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+.courses-choices .six .tag{
+    display: flex;
+    justify-content: start;
+}
+.courses-choices .tag div{
+    border: 1px solid #F1F1F3;
+    height: 30px;
+    width: 100px;
+    margin: 20px 20px 20px 0;
+    border-radius: 5px;
+}
+.courses-choices .tag p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.courses-choices .author{
+    font-size: 1.2rem;
+}
+.courses-choices h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.courses-choices a{
+    text-decoration: none;
+    color: black;
+}
+.courses-choices .get{
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #FCFCFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 238, 238);
+}
+
+/* #########testimonials####### */
+.testimonials{
+    margin-top: 40px;
+}
+
+/* Set the bottom part as fixed size and then use flex-grow. */
+.testimonials-words{
+    border-radius: 5px;
+    height: 350px;
+    border: 1px solid #F1F1F3;
+    display: flex;
+    flex-direction: column;
+    background-color: #FCFCFD;
+    margin-bottom: 20px;
+}
+.testimonials-words .text{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #F1F1F3;
+}
+.testimonials-words .text p{
+    line-height: 1.5rem;
+}
+/* Use multiple flexs to ahieve the layout. */
+.testimonials-words .introduction{
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonials-words img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.testimonials-words .picture-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-words .read{
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(234, 238, 238);
+}
+.testimonials-words div{
+    margin-right: 10px;
+}
+.testimonials-words .introduction p{
+    margin-right: 40px;
 }
