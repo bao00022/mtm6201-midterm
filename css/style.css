@@ -85,7 +85,8 @@ h1{
 /* ###############main part############### */
 /* ########banner1######### */
 .main{
-    margin: 20px;
+    /* margin: 20px; */
+    padding: 20px;
 }
 .banner1 {
     margin-top: 40px;
@@ -133,21 +134,25 @@ h1{
 .links ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 40px;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+.links ul li {
+    padding:0 10px;
 }
 .links ul li a{
     text-decoration: none;
     display: block;
-    width: 200px;
     height: 60px;
-    margin: 20px;
     border-radius: 5px;
     background-color: #FFFFFF;
     color: black;
     text-align: center;
     line-height: 60px;
     border: #F1F1F3;
+    padding: 0 20px;
+    white-space: nowrap;
 }
 .links ul li a:hover{
     background-color: #FF9500;
@@ -187,7 +192,7 @@ h1{
     margin-bottom: 20px;
 }
 /* Benefits, courses and testimonials have the same begining. */
-.benefits p, .courses p, .testimonials p{
+.benefits p, .courses p, .testimonials > p{
     margin-bottom: 20px;
     line-height: 1.5rem;
 }
@@ -334,6 +339,262 @@ h1{
 .testimonials-words div{
     margin-right: 10px;
 }
-.testimonials-words .introduction p{
+.testimonials-words .introduction > p{
     margin-right: 40px;
+}
+
+/* ###############pricing############## */
+.pricing{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pricing div > p{
+    line-height: 1.5rem;
+}
+.pricing .choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/* The div of choices is use to do layout of flex, and the inner div is used to do the size. */
+.pricing .choices > div {
+    border: 1px solid #F1F1F3;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.pricing button{
+    background-color: #FCFCFD;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #F1F1F3;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pricing button:hover{
+    color: white;
+    background-color: #FF9500;
+}
+.pricing > div{
+    padding: 20px;
+    width: 100%;
+}
+/* ###########plan########### */
+/* Use as much commonality as possible between the two divs to set the style */
+.pricing-plan{
+    background-color: #FCFCFD;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #F1F1F3;
+}
+.pricing-plan > div{
+    border: 1px solid  #F1F1F3;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(234, 238, 238);
+}
+.pricing-plan .plan-title{
+    width: 100%;
+}
+.pricing-plan .plan-title > div{
+    border-radius: 5px;
+    border: 1px solid #FFEACC;
+    background-color: #FFF9F0;
+    /* width: calc(100%-20px); */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+.plan-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px 0; */
+    height: 80px;
+    margin-top: 20px;
+}
+.pricing-plan .money{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.pricing-plan .money > span{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.pricing-plan .features{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F1F1F3;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    width: 100%;
+}
+.features .title{
+    height: 60px;
+    line-height: 60px;
+    /* margin: 20px 0; */
+}
+.features > .title >h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.features .feature1, .feature2{
+    height: 40px;
+    border: 1px solid #F1F1F3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 60px;
+    padding: 10px;
+}
+.features .feature1 div, .features .feature2 div{    
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.features .feature1 div{
+    background-color: #FFF4E5;
+    border: #F1F1F3;
+}
+.feature1 div, .feature2 div{
+    margin-right: 5px;
+}
+.pricing-plan .features .started{
+    border: 1px solid #F1F1F3;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+}
+.pricing-plan .features .started a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+/* .pricing-plan .features .started:hover{    
+    
+} */
+.pricing-plan .features .started a:hover{
+    color: white;
+    background-color: #FF9500;
+}
+
+/* ####################questions part##################### */
+.questions{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid red;
+}
+.questions div p{
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+.faq button{
+    background-color: #FCFCFD;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #F1F1F3;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.questions > div{
+    border: 1px solid red;
+}
+.questions .can, .what{
+    padding: 20px;
+    border-radius: 5px;
+}
+.questions .can .enroll{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F3;
+}
+.questions .can .absolutely{
+    padding-top: 20px;
+}
+.questions .can .process{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+.questions .what{
+    display: flex;
+    align-items: cenrter;
+    border: 1px solid #F1F1F3;
+    margin-bottom: 20px;
+}
+/* #################footer############## */
+footer > div{
+    padding: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer .email, .tel, .location{
+    display: flex;
+    margin-bottom: 10px;
+}
+footer .part2{
+    display: flex;
+    justify-content: space-between;
+}
+footer .part2 div{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+}
+footer .part2 div a{
+    text-decoration: none;
+    color: black;
+}
+footer .part2 div h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+footer .part3{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F1F1F3;
+}
+footer .part3 h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+footer .part3 div{
+    display: flex;
+}
+footer .part3 div img{
+    width: 20px;
+    height: 20px;
+}
+footer .part3 div div{
+    width: 30px;
+    height: 30px;
+    background-color: #FCFCFD;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p{
+    text-align: center;
+    margin-top: 10px;
 }
