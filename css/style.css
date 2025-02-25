@@ -1,14 +1,25 @@
 /* It has a light backgroud color */
 html, body{
-    background-color: rgb(234, 238, 238);
+    background-color: #E4E4E7;
     font-family: "Be Vietnam Pro", serif;
     font-weight: 400;
     font-style: normal;
 }
 h1{
-    font-size: 2rem;
+    font-size: 2.375rem;
+    margin-bottom: 20px;
 }
-/* #########header part########## */
+div{
+    border-radius: 5px;
+}
+button{
+    white-space: nowrap;
+}
+p{
+    line-height: 1.5rem;
+}
+
+/* ###################header part################## */
 .head{
     margin: 20px;
 }
@@ -18,11 +29,9 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
     /* It needs to stick to the top. */
-
 }
 .fixed p{
     color: white; 
@@ -31,29 +40,36 @@ h1{
 .fixed p span {
     padding-left: 10px;
 }
-.navigation{
+
+/* Every section follows mobile-first and then desktop version */
+.button-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F1F1F3;
+}
+.button-list > div{
+    display: flex;
+    flex-direction: row;
 }
 .logo{
     background-color: #FF9500;
     width: 40px;
     height: 40px;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navigation nav ul{
+.button-list nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.navigation nav ul li a {
+.button-list nav ul li a {
     text-decoration: none;
     color: black;
     /* This is how to center the text. */
@@ -64,7 +80,7 @@ h1{
     line-height: 40px;
     text-align: center;
 }
-.navigation nav ul li button{
+.button-list .nav2 ul li button{
     width: 40px;
     height: 40px;
     /* This is how to center a picture. */
@@ -73,26 +89,43 @@ h1{
     align-items: center;
     border: none;
 }
-.navigation nav ul li a:hover {
+.button-list nav ul li a:hover {
     background-color: #FF9500;
     color: white;
 }
-
-.head hr {
-    border: 1px #F1F1F3 solid;
+@media screen and (max-width: 780px) {
+    .button-list .nav1 {
+    display: none;
+}  
 }
 
-/* ###############main part############### */
+
+/* #######################main part#################### */
 /* ########banner1######### */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .main{
-    /* margin: 20px; */
+    width: 100%;
     padding: 20px;
 }
+/* The main part of the computer version is indented a little bit more than the header. */
+@media screen and (min-width: 780px) {
+    .main {
+        max-width: 1200px;
+        width: 90%;
+        padding: 0;
+    }
+}
+/* The font size is inconsistent in different versions */
 .banner1 {
     margin-top: 40px;
 }
 .unlock{
-    background-color: #FCFCFD;
+    background-color: #F1F1F3;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -109,8 +142,8 @@ h1{
     left: -10px;
 }
 .unlock-logo{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 .unlock .start{
     color:#FF9500;
@@ -119,17 +152,30 @@ h1{
 }
 .unlock .left{
     padding-left: 5px;
-    font-weight: bold;
+    font-weight: 600;
 }
+@media screen and (min-width: 780px) {
+    .unlock > p {
+        font-size: 2.25rem;
+    }
+}
+
 .with{
-    padding: 20px 40px;
+    padding: 20px 20px;
     text-align: center; 
 }
-.with .online, .development{
-    font-size: 2rem;
+.with .online{
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 .with p{
     padding-bottom: 10px;
+    line-height: 1.2;
+}
+@media screen and (min-width: 780px) {
+    .with .online{
+        font-size: 1.75rem;
+    }
 }
 .links ul{
     display: flex;
@@ -158,66 +204,80 @@ h1{
     background-color: #FF9500;
     color: white;
 }
+
 .brand{
     padding: 20px;
     height: 80px;
     border: #F1F1F3;
-    border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #FCFCFD ;
 }
-.brand .brand-boder{
+.brand .brand-border{
     width:auto;
     border-right: 1px solid #F1F1F3;
+}
+@media screen and (max-width: 540px){
+    .brand-border:nth-child(n+4) {
+        display: none;
+    }
 }
 
 /* ########banner2######### */
 .banner2{
     margin: 40px 0;
-    height: 250px;
+    height: 40vw;
     width: calc(100%-40px);
     background-image: url(../images/brand2-s.png);
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* #########benefits####### */
-h1{
-    margin-bottom: 20px;
-}
+/* #########################benefits######################## */
 /* Benefits, courses and testimonials have the same begining. */
-.benefits p, .courses p, .testimonials > p{
+.benefits > .text > p, .courses > .text > p, .testimonials > .text > p{
     margin-bottom: 20px;
-    line-height: 1.5rem;
 }
 .benefits button,.courses button, .testimonials button{
     background-color: #FCFCFD;
     height: 40px;
     width: 100px;
     border: 1px solid #F1F1F3;
-    border-radius: 5px;
     font-weight: bold;
     margin-bottom: 40px;
 }
+
+@media screen and (min-width: 780px){
+    .benefits > .text, .courses > .text, .testimonials > .text{
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefits > .text >p, .courses > .text >p, .testimonials > .text >p{
+        margin-right: 60px;
+    }
+}
+
 .benefits .six{
     background-color: #FCFCFD;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.benefits .six >  p{
+    flex-grow: 1;
 }
 .benefits .order,.arrow {
     display: flex;
     justify-content: end;
 }
-.benefits .text h2{
+.benefits h2{
     text-align:start;
     font-weight: bold;
     line-height: 3rem;
@@ -231,11 +291,21 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
-/* #########courses####### */
+@media screen and (min-width: 780px) {
+    .benefits-choice{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:10px;
+        margin-bottom: 40px;
+    }
+    .benefits .six{
+        margin-bottom: 0;
+    }
+}
+/* #######################courses part######################## */
 .courses-choices .six{
     background-color: #FCFCFD;
-    border-radius: 5px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -249,22 +319,31 @@ h1{
     display: flex;
     justify-content: start;
 }
+.courses-choices .tag-author{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (min-width: 780px) {
+    .courses-choices .tag-author{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 .courses-choices .tag div{
     border: 1px solid #F1F1F3;
-    height: 30px;
-    width: 100px;
-    margin: 20px 20px 20px 0;
-    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
-.courses-choices .tag p{
-    text-align: center;
-    line-height: 30px;
+.courses-choices .tag-author p{
+    white-space: nowrap;
 }
-
-.courses-choices .author{
+.courses-choices .author p{
     font-size: 1.2rem;
 }
-.courses-choices h2{
+urses-choices h2{
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -280,10 +359,22 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(234, 238, 238);
+    background-color: #F1F1F3;
 }
-
-/* #########testimonials####### */
+@media screen and (min-width: 780px) {
+    .courses-choices{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 10px;
+    }
+    .tag-author{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/* ###################testimonials part###################### */
 .testimonials{
     margin-top: 40px;
 }
@@ -296,7 +387,6 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: #FCFCFD;
-    margin-bottom: 20px;
 }
 .testimonials-words .text{
     flex-grow: 1;
@@ -328,29 +418,46 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.testimonials-words .read{
-    width: 240px;
-    height: 60px;
-    border-radius: 5px;
-    text-align: center;
+.picture-name p{
+    white-space: nowrap;
     line-height: 60px;
-    background-color: rgb(234, 238, 238);
 }
-.testimonials-words div{
-    margin-right: 10px;
+.testimonials-words .read{
+   padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F3;
 }
-.testimonials-words .introduction > p{
-    margin-right: 40px;
+.picture-name > p{
+    margin: 0 10px;
+    white-space: nowrap;
+}
+.testimonials-words .introduction > .read > p{
+    white-space: nowrap;
 }
 
-/* ###############pricing############## */
+.testimonials .grid{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+@media screen and (min-width: 780px) {
+    .testimonials .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:10px;
+    }
+}
+
+/* #######################pricing part##################### */
 .pricing{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-.pricing div > p{
-    line-height: 1.5rem;
+    margin-top: 40px;
 }
 .pricing .choices{
     display: flex;
@@ -360,69 +467,75 @@ h1{
 }
 /* The div of choices is use to do layout of flex, and the inner div is used to do the size. */
 .pricing .choices > div {
-    border: 1px solid #F1F1F3;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px 20px;
     background-color: white;
+    display: flex;
+    gap: 10px;
 }
 .pricing button{
     background-color: #FCFCFD;
-    height: 40px;
-    width: 100px;
-    border: 1px solid #F1F1F3;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 .pricing button:hover{
     color: white;
     background-color: #FF9500;
 }
-.pricing > div{
-    padding: 20px;
+.pricing .price-choices{
+    padding: 10px;
     width: 100%;
+}
+@media screen and (min-width: 780px) {
+    .price-choices > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .price-choices > div > .choices-p {
+        display: flex;
+        align-items: center;
+    }
 }
 /* ###########plan########### */
 /* Use as much commonality as possible between the two divs to set the style */
 .pricing-plan{
     background-color: #FCFCFD;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     border: 1px solid #F1F1F3;
+    padding: 20px;
+    gap: 20px;
+}
+@media screen and (min-width: 780px) {
+    .pricing-plan{
+        flex-direction: row;
+    }
 }
 .pricing-plan > div{
     border: 1px solid  #F1F1F3;
-    border-radius: 5px;
     padding: 20px;
     width: 100%;
-    background-color: rgb(234, 238, 238);
+    background-color: #fcfcfd;
+    display: flex;
+    flex-direction: column;
 }
-.pricing-plan .plan-title{
+.pricing-plan .plan-title {
     width: 100%;
-}
-.pricing-plan .plan-title > div{
     border-radius: 5px;
     border: 1px solid #FFEACC;
     background-color: #FFF9F0;
-    /* width: calc(100%-20px); */
     display: flex;
     justify-content: center;
     padding: 20px;
-    /* margin-bottom: 20px; */
 }
 .plan-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 20px 0; */
-    height: 80px;
-    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
 }
 .pricing-plan .money{
     font-size: 3rem;
+    line-height: 50px;
     font-weight: bold;
 }
 .pricing-plan .money > span{
@@ -432,64 +545,62 @@ h1{
 .pricing-plan .features{
     display: flex;
     flex-direction: column;
-    border: 1px solid #F1F1F3;
-    justify-content: space-between;
     align-items: center;
-    /* padding: 0 20px; */
-    width: 100%;
+    border: 1px solid #F1F1F3;
+    background-color: white;
+}
+.pricing-plan .features .feature-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 .features .title{
-    height: 60px;
-    line-height: 60px;
-    /* margin: 20px 0; */
-}
-.features > .title >h2{
+    padding: 20px;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
-.features .feature1, .feature2{
-    height: 40px;
+.features .feature{
+    padding: 10px;
     border: 1px solid #F1F1F3;
     display: flex;
     justify-content: start;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
-    height: 60px;
-    padding: 10px;
 }
-.features .feature1 div, .features .feature2 div{    
+.features .feature div{    
     height: 20px;
     width: 20px;
     border-radius: 5px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-}
-.features .feature1 div{
     background-color: #FFF4E5;
     border: #F1F1F3;
+    margin-right: 10px;
 }
-.feature1 div, .feature2 div{
-    margin-right: 5px;
-}
-.pricing-plan .features .started{
+
+.features .feature-blocked div{
+    background-color: white;
     border: 1px solid #F1F1F3;
-    height: 60px;
+}
+.features .feature div span {
+    font-size: 1rem;
+}
+
+
+.pricing-plan .features .started{
     width: 100%;
     text-align: center;
-    line-height: 60px;
-    border-radius: 5px;
 }
 .pricing-plan .features .started a{
-    text-decoration: none;
-    color: black;
     display: block;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    color: black;
     border-radius: 0 0 5px 5px;
 }
-/* .pricing-plan .features .started:hover{    
-    
-} */
 .pricing-plan .features .started a:hover{
     color: white;
     background-color: #FF9500;
@@ -497,53 +608,91 @@ h1{
 
 /* ####################questions part##################### */
 .questions{
-    margin: 20px;
+    margin-top: 40px;
     padding: 20px;
-    border: 1px solid red;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.questions div p{
-    margin-bottom: 20px;
-    line-height: 1.5rem;
+.questions > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .faq button{
     background-color: #FCFCFD;
-    height: 40px;
-    width: 100px;
+    padding: 20px;
     border: 1px solid #F1F1F3;
     border-radius: 5px;
-    font-weight: bold;
-    margin-bottom: 40px;
 }
-.questions > div{
-    border: 1px solid red;
-}
-.questions .can, .what{
+.questions .expended-question{
+    border: 1px solid #F1F1F3;
     padding: 20px;
-    border-radius: 5px;
-}
-.questions .can .enroll{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.questions .expended-question > div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.questions .expended-question .ask{
+    font-weight: bold;
+    padding: 20px 0;
     border-bottom: 1px solid #F1F1F3;
 }
-.questions .can .absolutely{
-    padding-top: 20px;
+.questions .expended-question .enroll{
+    background-color: #dfdfdf;
+    padding: 10px 20px;
 }
-.questions .can .process{
+.questions .expended-question .answer{
+    color: #9f9f9f;
+}
+.questions .expended-question button, .questions .question button{
+    width: 40px;
+    height: 40px;
+    background-color: #FFF4E5;
+    border: none;
+    border-radius: 5px;
+    flex-shrink: 0; 
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    align-items: center;
 }
-.questions .what{
-    display: flex;
-    align-items: cenrter;
+.questions .expended-question .enroll button{
+    border-radius: 50%;
+    background-color: #efefef;
+}
+.questions .question {
     border: 1px solid #F1F1F3;
-    margin-bottom: 20px;
-}
-/* #################footer############## */
-footer > div{
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 780px) {
+    .question {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* #######################footer part##################### */
+footer{
+    margin-top: 60px;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap:20px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F1F1F3;
 }
 footer .logo{
     margin-bottom: 30px;
@@ -552,40 +701,41 @@ footer .email, .tel, .location{
     display: flex;
     margin-bottom: 10px;
 }
-footer .part2{
+.home-about{
     display: flex;
     justify-content: space-between;
 }
-footer .part2 div{
+.home-about div{
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
 }
-footer .part2 div a{
+.home-about div a{
     text-decoration: none;
     color: black;
 }
-footer .part2 div h3{
-    font-weight: 500;
+.home-about div h3{
+    font-weight: 600;
     margin-bottom: 10px;
 }
-footer .part3{
+.social-column{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #F1F1F3;
+    padding-top: 30px;
 }
-footer .part3 h3{
-    font-weight: 500;
+.social-column h3{
+    font-weight: 600;
     margin-bottom: 10px;
 }
-footer .part3 div{
+.social-column div{
     display: flex;
 }
-footer .part3 div img{
+.social-columndiv img{
     width: 20px;
     height: 20px;
 }
-footer .part3 div div{
+.social-column div div{
     width: 30px;
     height: 30px;
     background-color: #FCFCFD;
@@ -596,5 +746,23 @@ footer .part3 div div{
 }
 footer > p{
     text-align: center;
-    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+@media screen and (min-width: 780px){
+    footer > div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .home-about-social{
+        display: flex; 
+        gap: 60px;
+        align-items: start;
+    }
+    .home-about{
+        gap:60px;
+    }
+    .social-column{
+        padding-top: 0;
+    }
 }

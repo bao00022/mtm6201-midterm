@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,11 +20,23 @@
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <p><span class="material-symbols-outlined">arrow_forward</span></p>
             </div>
-            <div class="navigation">
-                <div class="logo">
-                    <img src="./images/logo-s.svg" alt="logo">
+            <div class="button-list">
+                <div>
+                    <div class="logo">
+                        <img src="./images/logo-s.svg" alt="logo">
+                    </div>
+                    <nav class="nav1">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
+                
+                <nav class="nav2">
                     <ul>
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
@@ -33,7 +45,7 @@
                     </ul>
                 </nav>
             </div>
-            <hr>
+
        </div>
     </header>
 
@@ -49,10 +61,8 @@
                         <p class="start">Unlock</p> <p class="left">Your Creative Potential</p>
                     </div>
                     <div class="with">
-                        <p class="online">with Online Design and</p>
-                        <p class="development">Development Courses.</p>
-                        <p class="learn">Learn from Industry Experts and Enhance</p>
-                        <p class="skills">Your Skills.</p>
+                        <p class="online">with Online Design and Development Courses.</p>
+                        <p class="learn">Learn from Industry Experts and Enhance Your Skills.</p>
                     </div>
                     <div class="links">
                         <ul>
@@ -63,16 +73,28 @@
                 </div> 
                 <div class="brand">
                     <!-- use divs to set right borders of logos. -->
-                     <div class="brand-boder">
+                     <div class="brand-border">
                         <img src="./images/zapier-s.svg" alt="logo of zapier">
                      </div>
-                    <div class="brand-boder">
+                    <div class="brand-border">
                         <img src="./images/spotify-s.svg" alt="logo of spotify">
                     </div>
-                    <div class="brand-boder">
+                    <div class="brand-border">
                         <img src="./images/zoom-s.svg" alt="logo of zoom">
                     </div>
-                </div>
+                   <div class="brand-border">
+                        <img src="./images/amazon-s.svg" alt="logo of amazon">
+                   </div>
+                   <div class="brand-border">
+                        <img src="./images/adobe-s.svg" alt="logo of adobe">
+                   </div>
+                   <div class="brand-border">
+                        <img src="./images/notion-s.svg" alt="logo of notion">
+                   </div>
+                   <div class="brand-border">
+                        <img src="./images/netflix-s.svg" alt="logo of netflix">
+                   </div>
+                </div>  
            </div>
     
            <!-- Use background image. -->
@@ -82,19 +104,18 @@
 
            <div class="benefits">
                 <h1>Benefits</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                <button>View All</button>
-
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                    <button>View All</button>
+                </div>                
                 <div class="benefits-choice">
                     <!-- Six dives have the same pattern. -->
                     <div class="six benefits-01">
                         <div class="order">
                             <h1>01</h1>
                         </div>
-                        <div class="text">
                             <h2>Flexible Learning Schedule</h2>
                             <p>Fit your coursework around your existing commitments and obligations.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -106,10 +127,8 @@
                         <div class="order">
                             <h1>02</h1>
                         </div>
-                        <div class="text">
                             <h2>Expert Instruction</h2>
                             <p>Learn from industry experts who have hands-on experience in design and development.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -121,10 +140,8 @@
                         <div class="order">
                             <h1>03</h1>
                         </div>
-                        <div class="text">
                             <h2>Diverse Course Offerings</h2>
                             <p>Explore a wide range of design and development courses covering various topics.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -136,10 +153,8 @@
                         <div class="order">
                             <h1>04</h1>
                         </div>
-                        <div class="text">
                             <h2>Updated Curriculum</h2>
                             <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -151,10 +166,8 @@
                         <div class="order">
                             <h1>05</h1>
                         </div>
-                        <div class="text">
                             <h2>Practical Projects and Assignments</h2>
                             <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -166,10 +179,8 @@
                         <div class="order">
                             <h1>06</h1>
                         </div>
-                        <div class="text">
                             <h2> Interactive Learning Environment</h2>
                             <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
-                        </div>
                         <div class="arrow">
                             <div class="arrow-border">
                                 <img src="./images/benefits-arrow-s.svg" alt="an arrow icon">
@@ -181,21 +192,22 @@
 
            <div class="courses">
                 <h1>Our Courses</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                <button>View All</button>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                    <button>View All</button>
+                </div>
+                
                 <div class="courses-choices">
                    <!-- Every div has the same pattern. -->
                     <div class="six courses-01">
                         <img src="./images/john-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>4 Weeks</p>
+                        <div class="tag-author">     
+                            <div class="tag">
+                                <div><p>4 Weeks</p></div>
+                                <div><p>Beginner</p></div>
                             </div>
-                            <div>
-                                <p>Beginner</p>
-                            </div>
+                            <div class="author"><p>By John Smith</p></div>
                         </div>
-                        <p class="author">By John Smith</p>
                         <h2>Web Design Fundamentals</h2>
                         <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                         <div class="get">
@@ -205,15 +217,13 @@
 
                     <div class="six courses-02">
                         <img src="./images/emily-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>6 Weeks</p>
+                        <div class="tag-author">
+                            <div class="tag">
+                                <div><p>6 Weeks</p></div>
+                                <div><p>Intermediate</p></div>
                             </div>
-                            <div>
-                                <p>Intermediate</p>
-                            </div>
+                            <div><p class="author">By Emily Johnson</p></div>
                         </div>
-                        <p class="author">By Emily Johnson</p>
                         <h2>UI/UX Design</h2>
                         <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                         <div class="get">
@@ -223,15 +233,13 @@
 
                     <div class="six courses-03">
                         <img src="./images/david-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>8 Weeks</p>
+                        <div class="tag-author">
+                            <div class="tag">
+                                <div><p>8 Weeks</p></div>
+                                <div><p>Intermediate</p></div>
                             </div>
-                            <div>
-                                <p>Intermediate</p>
-                            </div>
+                            <div><p class="author">By David Brown</p></div>
                         </div>
-                        <p class="author">By David Brown</p>
                         <h2>Mobile App Development</h2>
                         <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         <div class="get">
@@ -241,15 +249,14 @@
 
                     <div class="six courses-04">
                         <img src="./images/david-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>8 Weeks</p>
+                        <div class="tag-author">
+                            <div class="tag">
+                                <div><p>8 Weeks</p></div>
+                                <div><p>Intermediate</p></div>
                             </div>
-                            <div>
-                                <p>Intermediate</p>
-                            </div>
+                            <div><p class="author">By David Brown</p></div>
                         </div>
-                        <p class="author">By David Brown</p>
+                        
                         <h2>Mobile App Development</h2>
                         <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         <div class="get">
@@ -259,15 +266,14 @@
 
                     <div class="six courses-05">
                         <img src="./images/sarah-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>10 Weeks</p>
+                        <div class="tag-author">
+                            <div class="tag">
+                                <div><p>10 Weeks</p></div>
+                                <div><p>Beginner</p></div>
                             </div>
-                            <div>
-                                <p>Beginner</p>
-                            </div>
+                            <div><p class="author">By Sarah Thompson</p></div>
                         </div>
-                        <p class="author">By Sarah Thompson</p>
+                        
                         <h2>Graphic Design for Beginners</h2>
                         <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                         <div class="get">
@@ -277,15 +283,14 @@
 
                     <div class="six courses-06">
                         <img src="./images/michal-s.png" alt="">
-                        <div class="tag">
-                            <div>
-                                <p>10 Weeks</p>
+                        <div class="tag-author">
+                            <div class="tag">
+                            <div><p>10 Weeks</p></div>
+                            <div><p>Intermediate</p></div>
                             </div>
-                            <div>
-                                <p>Intermediate</p>
-                            </div>
+                            <div><p class="author">By Michael Adams</p></div>
                         </div>
-                        <p class="author">By Michael Adams</p>
+                     
                         <h2>Front-end Web Development</h2>
                         <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                         <div class="get">
@@ -299,221 +304,177 @@
 
            <div class="testimonials">
                 <h1>Our testimonials</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                <button>View All</button>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                    <button>View All</button>
+                </div>
+                
            <!-- The four divs share the same pattern. -->
-                <div class="testimonials-words">
-                        <div class="text">
-                            <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
-                        </div>
-                        <div class="introduction">
-                            <div class="picture-name">
-                                <div class="picture">
-                                    <img src="./images/sarah-l-s.png" alt="">
-                                </div>
-                                <p>Sarah L</p>
-                            </div>                
-                            <div class="read">
-                                <p>Read Full Story</p>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="testimonials-words">
-                        <div class="text">
-                            <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
-                        </div>
-                        <div class="introduction">
-                            <div class="picture-name">
-                                <div class="picture">
-                                    <img src="./images/jason-m-s.png" alt="">
-                                </div>
-                                <p>Jason M</p>
-                            </div>                
-                            <div class="read">
-                                <p>Read Full Story</p>
-                            </div>
-                        </div>
-                </div>    
-
-                <div class="testimonials-words">
-                        <div class="text">
-                            <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
-                        </div>
-                        <div class="introduction">
-                            <div class="picture-name">
-                                <div class="picture">
-                                    <img src="./images/emily-r-s.png" alt="">
-                                </div>
-                                <p>Emily R</p>
-                            </div>                
-                            <div class="read">
-                                <p>Read Full Story</p>
-                            </div>
-                        </div>
-                </div>
-
-                <div class="testimonials-words">
+                
+                <div class="grid">              
+                    <div class="testimonials-words">
                             <div class="text">
-                                <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                                <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                             </div>
                             <div class="introduction">
                                 <div class="picture-name">
-                                <div class="picture">
-                                    <img src="./images/michael-k-s.png" alt="">
+                                    <div class="picture">
+                                        <img src="./images/sarah-l-s.png" alt="">
+                                    </div>
+                                    <p>Sarah L</p>
+                                </div>                
+                                <div class="read">
+                                    <p>Read Full Story</p>
                                 </div>
-                                <p>Michael K</p>
-                            </div>                
-                            <div class="read">
-                                <p>Read Full Story</p>
                             </div>
-                        </div>
+                    </div>
+
+                    <div class="testimonials-words">
+                            <div class="text">
+                                <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                            </div>
+                            <div class="introduction">
+                                <div class="picture-name">
+                                    <div class="picture">
+                                        <img src="./images/jason-m-s.png" alt="">
+                                    </div>
+                                    <p>Jason M</p>
+                                </div>                
+                                <div class="read">
+                                    <p>Read Full Story</p>
+                                </div>
+                            </div>
+                    </div>    
+
+                    <div class="testimonials-words">
+                            <div class="text">
+                                <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                            </div>
+                            <div class="introduction">
+                                <div class="picture-name">
+                                    <div class="picture">
+                                        <img src="./images/emily-r-s.png" alt="">
+                                    </div>
+                                    <p>Emily R</p>
+                                </div>                
+                                <div class="read">
+                                    <p>Read Full Story</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="testimonials-words">
+                                <div class="text">
+                                    <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                                </div>
+                                <div class="introduction">
+                                    <div class="picture-name">
+                                    <div class="picture">
+                                        <img src="./images/michael-k-s.png" alt="">
+                                    </div>
+                                    <p>Michael K</p>
+                                </div>                
+                                <div class="read">
+                                    <p>Read Full Story</p>
+                                </div>
+                            </div>
+                    </div>
                 </div>
            </div>
 
            <div class="pricing">
-               <div>
-                    <h1>Our Pricing</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                    <div class="choices">
+                <div class="price-choices">
+                        <h1>Our Pricing</h1>
                         <div>
-                            <button>Monthly</button>
-                            <button>Yearly</button>
-                        </div>
-                    </div> 
-               </div>
-                <div>
-                    <div class="pricing-plan free-plan">
-                        <div>
-                            <div class="plan-title">
+                            <div class="choices-p"><p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p></div>
+                            <div class="choices">
                                 <div>
-                                    <p>Free Plan</p>
-                                </div>                          
-                            </div>
-                            <div class="plan-content">
-                                <p class="money">$0<span>/month</span></p>
-                            </div>
-                           
-                            <div class="features">
-                                <div class="title">
-                                    <h2>Available Features</h2>
-                                </div> 
-                                              
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                    <button>Monthly</button>
+                                    <button>Yearly</button>
+                                </div>
+                            </div> 
+                        </div>
+                </div>
+
+                <div class="pricing-plan">
+                    <div class="free-plan">
+                        <div class="plan-title"><p>Free Plan</p></div>
+                        <div class="plan-content"><p class="money">$0<span>/month</span></p></div>
+                        <div class="features">
+                            <div class="title"><h2>Available Features</h2></div>
+                            <div class="feature-list">
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Access to selected free courses.</p>
                                 </div>
-                                <div class="feature1">
-                                   <div>
-                                    <img src="./images/right-s.svg" alt="">
-                                   </div>                                   
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                   
                                     <p>Limited course materials and resources.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>
                                     <p>Basic community support.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                  
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                  
                                     <p>No certification upon completion.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Ad-supported platform.</p>
                                 </div>
-                                <div class="feature2">
-                                    <div>
-                                    <img src="./images/wrong-s.svg" alt="">
-                                    </div>                                  
+                                <div class="feature feature-blocked">
+                                    <div><span class="material-symbols-outlined">close</span></div>                                  
                                     <p>Access to exclusive Pro Plan community forums.</p>
                                 </div>
-                                <div class="feature2">
-                                    <div>
-                                        <img src="./images/wrong-s.svg" alt="">
-                                    </div>                                   
+                                <div class="feature feature-blocked">
+                                    <div><span class="material-symbols-outlined">close</span></div>                                   
                                     <p>Early access to new courses and updates.</p>
                                 </div>
-                                <div class="started">
-                                    <a href="#">Get Started</a>
-                                </div>                               
                             </div>
-                        </div>
-                      
-                    </div>   
-                    <div class="pricing-plan pro-plan">
-                        <div>
-                            <div class="plan-title">
-                                <div>
-                                    <p>Pro Plan</p>
-                                </div>
-                            </div>
-                            <div class="plan-content">
-                                <p class="money">$79<span>/month</span></p>
-                            </div>
+                            <div class="started"><a href="#">Get Started</a></div> 
+                        </div>                           
+                    </div>
+                    <div class="pro-plan">
+                        <div class="plan-title"><p>Pro Plan</p></div>
+                        <div class="plan-content"><p class="money">$79<span>/month</span></p></div>
 
-                            <div class="features">
-                                <div class="title">
-                                    <h2>Available Features</h2>
-                                </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                        <div class="features">
+                            <div class="title"><h2>Available Features</h2></div>
+                            <div class="feature-list">
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Unlimited access to all courses.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Unlimited course materials and resources.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Priority support from instructors.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Course completion certificates.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Ad-free experience.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Access to exclusive Pro Plan community forums.</p>
                                 </div>
-                                <div class="feature1">
-                                    <div>
-                                        <img src="./images/right-s.svg" alt="">
-                                    </div>                                
+                                <div class="feature">
+                                    <div><span class="material-symbols-outlined">check</span></div>                                
                                     <p>Early access to new courses and updates.</p>
                                 </div>
-                                <div class="started">
-                                    <a href="#">Get Started</a>
-                                </div>
                             </div>
+                            <div class="started"><a href="#">Get Started</a></div>
                         </div>
-        
-                        </div>
-                    </div>       
-                </div>                              
+                    </div>
+                </div>                                   
            </div>
        
            <div class="questions">
@@ -525,34 +486,34 @@
                     </div>
                 </div>
                 <div>
-                    <div class="can">
-                        <div class="enroll">
+                    <div class="expended-question">
+                        <div class="ask">
                             <p>Can I enroll in multiple courses at once?</p>
-                            <img src="./images/wrong-s.svg" alt="">
+                            <button><span class="material-symbols-outlined">close</span></button>
                         </div>
-                        <div class="absolutely">
+                        <div class="answer">
                             <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
                         </div>
-                        <div class="process">
+                        <div class="enroll">
                             <p>Enrollment Process for Different Courses</p>
-                            <img src="./images/arrow-right-s.svg" alt="">
+                            <button><span class="material-symbols-outlined">arrow_forward</span></button>
                         </div>
                     </div>
-                    <div class="what">
+                    <div class="question">
                         <p>What kind of support can I expect from instructors?</p>
-                        <img src="./images/plus-s.svg" alt="">
+                        <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="what">
+                    <div class="question">
                         <p>Are the courses self-paced or do they have specific start and end dates?</p>
-                        <img src="./images/plus-s.svg" alt="">
+                        <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="what">
+                    <div class="question">
                         <p>Are there any prerequisites for the courses?</p>
-                        <img src="./images/plus-s.svg" alt="">
+                        <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="what">
+                    <div class="question">
                         <p>Can I download the course materials for offline access?</p>
-                        <img src="./images/plus-s.svg" alt="">
+                        <button><span class="material-symbols-outlined">add</span></button>
                     </div>
                 </div>
            </div>
@@ -560,7 +521,8 @@
     </main>
 
     <footer>
-        <div class="part1">
+        <div>
+        <div class="logo-column">
             <div class="logo">
                 <img src="./images/logo-s.svg" alt="logo">
             </div>
@@ -577,36 +539,38 @@
                 <p>Somewhere in the World</p>
             </div>
         </div>
-        <div class="part2">
-            <div class="home">
-                <h3>Home</h3>
-                <a href="#">Benefits</a>
-                <a href="#">Our Courses</a>
-                <a href="#">Our Testimonials</a>
-                <a href="#">Our FAQ</a>
+        <div class="home-about-social">
+            <div class="home-about">
+                <div class="home-column">
+                    <h3>Home</h3>
+                    <a href="#">Benefits</a>
+                    <a href="#">Our Courses</a>
+                    <a href="#">Our Testimonials</a>
+                    <a href="#">Our FAQ</a>
+                </div>
+                <div class="about-column">
+                    <h3>About Us</h3>
+                    <a href="#">Company</a>
+                    <a href="#">Achievements</a>
+                    <a href="#">Our Goals</a>
+                </div>
             </div>
-            <div class="about">
-                <h3>About Us</h3>
-                <a href="#">Company</a>
-                <a href="#">Achievements</a>
-                <a href="#">Our Goals</a>
+            <div class="social-column">
+                <h3>Social Profiles</h3>
+                <div>
+                    <div>
+                        <img src="./images/face-s.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/x-s.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="./images/ins-s.svg" alt="">
+                    </div>
+                </div>            
             </div>
         </div>
-        <div class="part3">
-            <h3>Social Profiles</h3>
-            <div>
-                <div>
-                    <img src="./images/face-s.svg" alt="">
-                </div>
-                <div>
-                    <img src="./images/x-s.svg" alt="">
-                </div>
-                <div>
-                    <img src="./images/ins-s.svg" alt="">
-                </div>
-            </div>            
         </div>
-      
         <p>© 2023 Skillbridge. All rights reserved.</p>
     </footer>
 </body>
