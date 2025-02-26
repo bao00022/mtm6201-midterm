@@ -1,3 +1,4 @@
+/* #########################home page########################## */
 /* It has a light backgroud color */
 html, body{
     background-color: #E4E4E7;
@@ -17,11 +18,14 @@ button{
 }
 p{
     line-height: 1.5rem;
+    font-weight: 400;
 }
 
 /* ###################header part################## */
 .head{
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .fixed{
     background-color: #FF9500;
@@ -29,15 +33,14 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin: 20px 0;
+    width: calc(100% - 20px);
+    color: white; 
     /* It needs to stick to the top. */
 }
-.fixed p{
-    color: white; 
-}
 /* Use padding to seperate the text and the arrow. */
-.fixed p span {
+.fixed span {
     padding-left: 10px;
 }
 
@@ -48,8 +51,15 @@ p{
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #F1F1F3;
+    width: calc(100% - 20px);
+}
+@media screen and (min-width: 780px) {
+    .button-list {
+        max-width: 1200px;
+        width: 90%;
+    }
 }
 .button-list > div{
     display: flex;
@@ -247,7 +257,7 @@ main{
     height: 40px;
     width: 100px;
     border: 1px solid #F1F1F3;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 40px;
 }
 
@@ -343,7 +353,7 @@ main{
 .courses-choices .author p{
     font-size: 1.2rem;
 }
-urses-choices h2{
+。courses-choices h2{
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -764,5 +774,167 @@ footer > p{
     }
     .social-column{
         padding-top: 0;
+    }
+}
+
+
+/* ##############################course page####################### */
+/* #################design-course part############# */
+.online-courses{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F1F1F3;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 780px){
+    .online-courses{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .online-courses > div {
+        flex-shrink: 0; 
+        flex-grow: 0;
+        width: 50%;
+    }
+    .online-courses .title{
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .online-courses .title h1{
+        margin-bottom: 0;
+    }
+}
+/* ##############course-introduction part######### */
+.course-introduction{
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-general{
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.course-head{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.course-introduction h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.course-head button{
+    background-color: #FCFCFD;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #F1F1F3;
+    font-weight: 500;
+    margin: 20px 0;
+}
+@media screen and (min-width: 780px){
+    .course-head{
+        flex-direction: row;
+        gap:40px;
+    }
+}
+.course-pictures{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 300px; */
+    gap: 10px;
+}
+.course-pictures img{
+    width: calc(33.3% - 6.7px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+
+.courses-general .tag-author{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.course-general .tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+}
+.course-general .tag > div{
+    padding: 10px;
+    border: 1px solid #F1F1F3;
+}
+.course-general .tag-author .author{
+    padding: 20px 0;
+    font-weight: 500;
+}
+@media screen and (min-width: 780px) {
+    .courses-general .tag-author{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.courses-general .tag div{
+    border: 1px solid #F1F1F3;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.courses-general .tag-author p{
+    white-space: nowrap;
+}
+.courses-general .author p{
+    font-size: 1.2rem;
+}
+
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F1F1F3;
+}
+.curriculum-title{
+    font-weight: 600;
+    padding: 20px;
+    border-bottom: 1px solid #F1F1F3;
+}
+.curriculum-details{
+    padding: 20px;
+    gap:20px;
+    border: 1px solid #F1F1F3;
+    display: flex;
+    flex-direction: column;
+}
+.curriculum-details .details{
+    padding: 20px 0;
+    border-bottom: 1px solid #F1F1F3;
+}
+.curriculum-details .details h3{
+    font-size: 1.375rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 780px){
+    .curriculum-details{
+        flex-direction: row;
+    }
+    .curriculum-details .details{
+        border-right: 1px solid #F1F1F3;
+        width: 20%;
+    }
+    .curriculum-details .details:last-child{
+        border-right: none;
     }
 }
