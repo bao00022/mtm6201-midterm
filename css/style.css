@@ -259,6 +259,7 @@ main{
     border: 1px solid #F1F1F3;
     font-weight: 500;
     margin-bottom: 40px;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 780px){
@@ -936,5 +937,153 @@ footer > p{
     }
     .curriculum-details .details:last-child{
         border-right: none;
+    }
+}
+
+
+/* ###############################about page###################### */
+/* #################skillbridge part############### */
+.skillbridge{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F1F1F3;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 780px){
+    .skillbridge{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .skillbridge > div {
+        flex-shrink: 0; 
+        flex-grow: 0;
+        width: 50%;
+    }
+    .skillbridge .title{
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skillbridge .title h1{
+        margin-bottom: 0;
+    }
+}
+/* ##################achievements and goals part############ */
+.achievements{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.head-part{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 20px;
+}
+.head-part h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.details-part{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.details-box{
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details-logo{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFEACC;
+    background-color: #FFF9F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 780px){
+    .details-part{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+.goals{
+    margin-bottom: 40px;
+}
+/* ################together part############# */
+/* If the background of .together is not set, it will be transparent and the color will be set on outer */
+.together-outer {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+/* Absolute, top and right are used together.  Height is used to control the size.*/
+.together-outer img {
+    position: absolute;
+    z-index: 0;
+    top: 60%;
+    right: -5%;
+    height: 60%;
+}
+@media screen and (min-width: 780px){
+    .together-outer img {
+        top: 0;
+        right: 10%;
+        height: 100%;
+    }
+}
+.together{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Only when the position property is set, z-index will work */
+    z-index: 1;
+}
+.together > div > div > p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.together > div > div > p >span{
+    color: #FF9500;
+}
+.together .slogan{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.together button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #F1F1F3;
+    border-radius: 5px;
+}
+.together button:hover{
+    background-color: #FF9500;
+    color: #FFFFFF;
+}
+@media screen and (min-width: 780px){
+    .together{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
