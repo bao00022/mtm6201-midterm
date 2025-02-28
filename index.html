@@ -14,22 +14,34 @@
 </head>
 <body>
     <header>
+        <!-- Set skip links. -->
+        <ul role="list" class="skip-links">
+            <li role="listitem"><a href="#navigator">Skip to header navigator</a></li>      
+            <li role="listitem"><a href="#banner1">Skip to banner1</a></li>
+            <li role="listitem"><a href="#banner2">Skip to banner2</a></li>
+            <li role="listitem"><a href="#benefits">Skip to benefits</a></li>
+            <li role="listitem"><a href="#courses">Skip to courses</a></li>
+            <li role="listitem"><a href="#testimonials">Skip to testimonials</a></li>
+            <li role="listitem"><a href="#pricing">Skip to pricing</a></li>
+            <li role="listitem"><a href="#questions">Skip to questions</a></li>
+            <li role="listitem"><a href="#footer">Skip to footer</a></li>
+        </ul>
        <div class="head">
             <!-- It has a fixed position. -->
             <div class="fixed">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
-            <div class="button-list">
+            <div class="button-list" id="navigator">
                 <div>
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
                     <nav class="nav1">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./course.html">Courses</a></li>
+                            <li><a href="./about.html">About Us</a></li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -41,7 +53,7 @@
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="drug-down-bar"></button> </li>
+                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
                     </ul>
                 </nav>
             </div>
@@ -53,11 +65,12 @@
     <main>
         <div class="main">
             
-            <div class="banner1">
+            <div class="banner1" id="banner1">
                 <div class="slogan">
                     <div class="unlock">
                         <img class="sprinkle" src="./images/sprinkle-s.svg" alt="image of sprinkle">
-                        <img class="unlock-logo"  src="./images/unlock-s.svg" alt="logo of ligntening">
+                        <img class="unlock-logo"  src="./images/unlock-s.svg" alt="icon of ligntening">
+                        <!-- Use span to seperate the paragraph. -->
                         <p class="start">Unlock</p> <p class="left">Your Creative Potential</p>
                     </div>
                     <div class="with">
@@ -74,35 +87,35 @@
                 <div class="brand">
                     <!-- use divs to set right borders of logos. -->
                      <div class="brand-border">
-                        <img src="./images/zapier-s.svg" alt="logo of zapier">
+                        <img src="./images/zapier-s.svg" alt="icon of zapier">
                      </div>
                     <div class="brand-border">
-                        <img src="./images/spotify-s.svg" alt="logo of spotify">
+                        <img src="./images/spotify-s.svg" alt="icon of spotify">
                     </div>
                     <div class="brand-border">
-                        <img src="./images/zoom-s.svg" alt="logo of zoom">
+                        <img src="./images/zoom-s.svg" alt="icon of zoom">
                     </div>
                    <div class="brand-border">
-                        <img src="./images/amazon-s.svg" alt="logo of amazon">
+                        <img src="./images/amazon-s.svg" alt="icon of amazon">
                    </div>
                    <div class="brand-border">
-                        <img src="./images/adobe-s.svg" alt="logo of adobe">
+                        <img src="./images/adobe-s.svg" alt="icon of adobe">
                    </div>
                    <div class="brand-border">
-                        <img src="./images/notion-s.svg" alt="logo of notion">
+                        <img src="./images/notion-s.svg" alt="icon of notion">
                    </div>
                    <div class="brand-border">
-                        <img src="./images/netflix-s.svg" alt="logo of netflix">
+                        <img src="./images/netflix-s.svg" alt="icon of netflix">
                    </div>
                 </div>  
            </div>
     
            <!-- Use background image. -->
-           <div class="banner2">
-            <img class="banner2-button" src="./images/brand2-button-s.svg" alt="button">  
+           <div class="banner2" id="banner2">
+            <img class="banner2-button" src="./images/brand2-button-s.svg" alt="image of button">  
            </div>
 
-           <div class="benefits">
+           <div class="benefits" id="benefits">
                 <h1>Benefits</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -190,7 +203,7 @@
                 </div>     
            </div>
 
-           <div class="courses">
+           <div class="courses" id="courses">
                 <h1>Our Courses</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -200,7 +213,13 @@
                 <div class="courses-choices">
                    <!-- Every div has the same pattern. -->
                     <div class="six courses-01">
-                        <img src="./images/john-s.png" alt="">
+                        <!-- 2 image sizes for optimizing images for small and large screens.-->
+                        <picture>                     
+                            <source srcset="./images/john-360.png" media="(min-width:780px)">
+                            <source srcset="./images/john-280.png" media="(max-width:780px)">
+                            <img src="./images/john-280.png" alt="image of one person doing low fidelity">
+                        </picture>
+
                         <div class="tag-author">     
                             <div class="tag">
                                 <div><p>4 Weeks</p></div>
@@ -216,7 +235,11 @@
                     </div>
 
                     <div class="six courses-02">
-                        <img src="./images/emily-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/john-780.png" alt="image of one person using a computer">
+                        </picture>
                         <div class="tag-author">
                             <div class="tag">
                                 <div><p>6 Weeks</p></div>
@@ -232,7 +255,11 @@
                     </div>
 
                     <div class="six courses-03">
-                        <img src="./images/david-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/david-360.png" media="(min-width:780px)">
+                            <source srcset="./images/david-280.png" media="(max-width:780px)">
+                            <img src="./images/david-280.png" alt="image of a cellphone">
+                        </picture>
                         <div class="tag-author">
                             <div class="tag">
                                 <div><p>8 Weeks</p></div>
@@ -248,7 +275,11 @@
                     </div>
 
                     <div class="six courses-04">
-                        <img src="./images/david-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/david-360.png" media="(min-width:780px)">
+                            <source srcset="./images/david-280.png" media="(max-width:780px)">
+                            <img src="./images/david-280.png" alt="image of a cellphone">
+                        </picture>
                         <div class="tag-author">
                             <div class="tag">
                                 <div><p>8 Weeks</p></div>
@@ -265,7 +296,11 @@
                     </div>
 
                     <div class="six courses-05">
-                        <img src="./images/sarah-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/sarah-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/sarah-780.png" media="(max-width:780px)">
+                            <img src="./images/sarah-780.png" alt="image of stationery">
+                        </picture>
                         <div class="tag-author">
                             <div class="tag">
                                 <div><p>10 Weeks</p></div>
@@ -282,7 +317,11 @@
                     </div>
 
                     <div class="six courses-06">
-                        <img src="./images/michal-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/michal-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/michal-780.png" media="(max-width:780px)">
+                            <img src="./images/michal-780.png" alt="image of a woman">
+                        </picture>
                         <div class="tag-author">
                             <div class="tag">
                             <div><p>10 Weeks</p></div>
@@ -302,15 +341,14 @@
                 </div>
            </div>
 
-           <div class="testimonials">
+           <div class="testimonials" id="testimonials">
                 <h1>Our testimonials</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <button>View All</button>
-                </div>
-                
-           <!-- The four divs share the same pattern. -->
-                
+                </div>               
+           <!-- The four divs share the same pattern. -->            
+           <!-- Add a div to change the display pattern in the desktop versoin. -->
                 <div class="grid">              
                     <div class="testimonials-words">
                             <div class="text">
@@ -319,7 +357,7 @@
                             <div class="introduction">
                                 <div class="picture-name">
                                     <div class="picture">
-                                        <img src="./images/sarah-l-s.png" alt="">
+                                        <img src="./images/sarah-l-s.png" alt="pictre of Sarah">
                                     </div>
                                     <p>Sarah L</p>
                                 </div>                
@@ -336,7 +374,7 @@
                             <div class="introduction">
                                 <div class="picture-name">
                                     <div class="picture">
-                                        <img src="./images/jason-m-s.png" alt="">
+                                        <img src="./images/jason-m-s.png" alt="picture of Jason">
                                     </div>
                                     <p>Jason M</p>
                                 </div>                
@@ -353,7 +391,7 @@
                             <div class="introduction">
                                 <div class="picture-name">
                                     <div class="picture">
-                                        <img src="./images/emily-r-s.png" alt="">
+                                        <img src="./images/emily-r-s.png" alt="picture of Emily">
                                     </div>
                                     <p>Emily R</p>
                                 </div>                
@@ -370,7 +408,7 @@
                                 <div class="introduction">
                                     <div class="picture-name">
                                     <div class="picture">
-                                        <img src="./images/michael-k-s.png" alt="">
+                                        <img src="./images/michael-k-s.png" alt="picture of Michael">
                                     </div>
                                     <p>Michael K</p>
                                 </div>                
@@ -382,7 +420,7 @@
                 </div>
            </div>
 
-           <div class="pricing">
+           <div class="pricing" id="pricing">
                 <div class="price-choices">
                         <h1>Our Pricing</h1>
                         <div>
@@ -396,6 +434,8 @@
                         </div>
                 </div>
 
+                        
+                <!-- Use span to seperate a paragraph. -->
                 <div class="pricing-plan">
                     <div class="free-plan">
                         <div class="plan-title"><p>Free Plan</p></div>
@@ -477,7 +517,7 @@
                 </div>                                   
            </div>
        
-           <div class="questions">
+           <div class="questions" id="questions">
                 <div>
                     <h1>Frequently Asked Questions</h1>
                     <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
@@ -485,6 +525,7 @@
                         <button>See All FAQ's</button>
                     </div>
                 </div>
+               <!-- The first div is an expended pattern compaired to other dives. -->
                 <div>
                     <div class="expended-question">
                         <div class="ask">
@@ -520,25 +561,26 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div>
         <div class="logo-column">
             <div class="logo">
                 <img src="./images/logo-s.svg" alt="logo">
             </div>
             <div class="email">
-                <img src="./images/email-s.svg" alt="">
+                <img src="./images/email-s.svg" alt="icon of email">
                 <p>hello@skillbridge.com</p>
             </div>
             <div class="tel">
-                <img src="./images/tel-s.svg" alt="">
+                <img src="./images/tel-s.svg" alt="icon of telephone">
                 <p>+91 91813 23 2309</p>
             </div>
             <div class="location">
-                <img src="./images/location-s.svg" alt="">
+                <img src="./images/location-s.svg" alt="icon of location">
                 <p>Somewhere in the World</p>
             </div>
         </div>
+        <!-- Add a div to do the different layout. -->
         <div class="home-about-social">
             <div class="home-about">
                 <div class="home-column">
@@ -559,13 +601,13 @@
                 <h3>Social Profiles</h3>
                 <div>
                     <div>
-                        <img src="./images/face-s.svg" alt="">
+                        <img src="./images/face-s.svg" alt="icon of facebook">
                     </div>
                     <div>
-                        <img src="./images/x-s.svg" alt="">
+                        <img src="./images/x-s.svg" alt="icon of x">
                     </div>
                     <div>
-                        <img src="./images/ins-s.svg" alt="">
+                        <img src="./images/ins-s.svg" alt="icon of instagram">
                     </div>
                 </div>            
             </div>

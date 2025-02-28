@@ -9,27 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+        
     <title>Midterm Project</title>
 </head>
 <body>
     <header>
+        <!-- Set skip links. -->
+        <ul role="list" class="skip-links">
+            <li role="listitem"><a href="#navigator">Skip to header navigator</a></li>      
+            <li role="listitem"><a href="#web-design">Skip to web-design courses</a></li>
+            <li role="listitem"><a href="#ui/ux-design">Skip to ui/ux-design courses</a></li>
+            <li role="listitem"><a href="#mobile-app">Skip to mobile-app courses</a></li>
+            <li role="listitem"><a href="#graphic-design">Skip to graphic-design courses</a></li>
+            <li role="listitem"><a href="#front-end">Skip to front-end courses</a></li>
+            <li role="listitem"><a href="#footer">Skip to footer</a></li>
+        </ul>
        <div class="head">
             <!-- It has a fixed position. -->
             <div class="fixed">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
-            <div class="button-list">
+            <div class="button-list" id="navigator">
                 <div>
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
                     <nav class="nav1">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./course.html">Courses</a></li>
+                            <li><a href="./about.html">About Us</a></li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -41,7 +51,7 @@
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="drug-down-bar"></button> </li>
+                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +62,8 @@
     <!-- The main part of the body is centered -->
     <main>
         <div class="main">
-            <div class="online-courses">
+            <div class="online-courses" id="online-courses">
+                <!-- Use div to do the layout of the content. -->
                 <div class="title"><h1>Online Courses on Design and Dvelopment</h1></div>
                 <div class="content">
                     <P>
@@ -62,8 +73,8 @@
             </div>
           
             <div class="course-introduction">
-
-                <div class="course-general web-design">
+                <!-- The following moudules have the same pattern. -->
+                <div class="course-general" id="web-design">
                    <div class="course-head">
                         <div class="course-title">
                             <div><h2>Web Design Fundamntals</h2></div>
@@ -72,11 +83,24 @@
                             </div>
                         </div>  
                         <button>View Course</button>
-                    </div>                   
+                    </div>  
+                    <!-- 2 image sizes for optimizing images for small and large screens.-->                   
                     <div class="course-pictures">
-                        <img src="./images/john-s.png" alt="">
-                        <img src="./images/tablet-s.png" alt="">
-                        <img src="./images/computer-s.png" alt="">
+                        <picture>                     
+                            <source srcset="./images/john-360.png" media="(min-width:780px)">
+                            <source srcset="./images/john-280.png" media="(max-width:780px)">
+                            <img src="./images/john-280.png" alt="image of one person doing low fidelity">
+                        </picture>
+                        <picture>                     
+                            <source srcset="./images/tablet-360.png" media="(min-width:780px)">
+                            <source srcset="./images/tablet-280.png" media="(max-width:780px)">
+                            <img src="./images/tablet-280.png" alt="image of one person doing low fidelity">
+                        </picture>
+                        <picture>                     
+                            <source srcset="./images/computer-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/computer-780.png" media="(max-width:780px)">
+                            <img src="./images/computer-780.png" alt="image of one person doing low fidelity">
+                        </picture>
                     </div>
                     <div class="tag-author">
                         <div class="tag">
@@ -87,6 +111,7 @@
                     </div>
                     <div class="curriculum">
                         <div class="curriculum-title"><h3>Curriculum</h3></div>
+                        <!-- Add a div to do the row and the column layout. -->
                         <div class="curriculum-details">
                             <div class="details">
                                 <div><h3>01</h3></div>
@@ -112,7 +137,7 @@
                     </div>
                 </div>
            
-                <div class="course-general ui/ux-design">
+                <div class="course-general" id="ui/ux-design">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>UI/UX Design</h2></div>
@@ -123,9 +148,24 @@
                          <button>View Course</button>
                      </div>                   
                      <div class="course-pictures">
-                         <img src="./images/emily-s.png" alt="">
-                         <img src="./images/emily-s.png" alt="">
-                         <img src="./images/emily-s.png" alt="">
+                         <!-- <img src="./images/emily-s.png" alt=""> -->
+                         <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
+                        </picture>
+                         <!-- <img src="./images/emily-s.png" alt=""> -->
+                         <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
+                        </picture>
+                         <!-- <img src="./images/emily-s.png" alt=""> -->
+                         <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
+                        </picture>
                      </div>
                      <div class="tag-author">
                          <div class="tag">
@@ -161,7 +201,7 @@
                      </div>
                  </div>    
             
-                 <div class="course-general mobile-app">
+                 <div class="course-general" id="mobile-app">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Mobile App Development</h2></div>
@@ -172,9 +212,21 @@
                          <button>View Course</button>
                      </div>                   
                      <div class="course-pictures">
-                         <img src="./images/david-s.png" alt="">
-                         <img src="./images/david-s.png" alt="">
-                         <img src="./images/david-s.png" alt="">
+                         <picture>                     
+                            <source srcset="./images/david-360.png" media="(min-width:780px)">
+                            <source srcset="./images/david-280.png" media="(max-width:780px)">
+                            <img src="./images/david-280.png" alt="image of one person doing low fidelity">
+                        </picture>
+                         <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
+                        </picture>
+                         <picture>                     
+                            <source srcset="./images/emily-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/emily-780.png" media="(max-width:780px)">
+                            <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
+                        </picture>
                      </div>
                      <div class="tag-author">
                          <div class="tag">
@@ -210,7 +262,7 @@
                      </div>
                  </div>
 
-                 <div class="course-general graphic-design">
+                 <div class="course-general" id="graphic-design">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Graphic Design for Beginners</h2></div>
@@ -221,9 +273,21 @@
                          <button>View Course</button>
                      </div>                   
                      <div class="course-pictures">
-                         <img src="./images/sarah-s.png" alt="">
-                         <img src="./images/ideas.png" alt="">
-                         <img src="./images/creative.png" alt="">
+                         <picture>                     
+                            <source srcset="./images/sarah-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/sarah-780.png" media="(max-width:780px)">
+                            <img src="./images/sarah-780.png" alt="image of stationery">
+                        </picture>
+                        <picture>                     
+                            <source srcset="./images/ideas-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/ideas-780.png" media="(max-width:780px)">
+                            <img src="./images/ideas-780.png" alt="image of stationery">
+                        </picture>
+                         <picture>                     
+                            <source srcset="./images/creative-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/creative-780.png" media="(max-width:780px)">
+                            <img src="./images/creative-780.png" alt="image of the scrren of a computer">
+                        </picture>
                      </div>
                      <div class="tag-author">
                          <div class="tag">
@@ -259,7 +323,7 @@
                      </div>
                  </div>
 
-                 <div class="course-general front-end">
+                 <div class="course-general" id="front-end">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Font-End Web Development</h2></div>
@@ -270,9 +334,21 @@
                          <button>View Course</button>
                      </div>                   
                      <div class="course-pictures">
-                         <img src="./images/michal-s.png" alt="">
-                         <img src="./images/html.png" alt="">
-                         <img src="./images/css.png" alt="">
+                         <picture>                     
+                            <source srcset="./images/michal-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/michal-780.png" media="(max-width:780px)">
+                            <img src="./images/michal-780.png" alt="image of a woman sitting in front of a computer">
+                        </picture>
+                         <picture>                     
+                            <source srcset="./images/html-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/html-780.png" media="(max-width:780px)">
+                            <img src="./images/html-780.png" alt="image of the a woman looking at the screen">
+                        </picture>
+                         <picture>                     
+                            <source srcset="./images/css-1060.png" media="(min-width:780px)">
+                            <source srcset="./images/css-780.png" media="(max-width:780px)">
+                            <img src="./images/css-780.png" alt="image of a woman">
+                        </picture>
                      </div>
                      <div class="tag-author">
                          <div class="tag">
@@ -311,22 +387,22 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div>
         <div class="logo-column">
             <div class="logo">
                 <img src="./images/logo-s.svg" alt="logo">
             </div>
             <div class="email">
-                <img src="./images/email-s.svg" alt="">
+                <img src="./images/email-s.svg" alt="icon of email">
                 <p>hello@skillbridge.com</p>
             </div>
             <div class="tel">
-                <img src="./images/tel-s.svg" alt="">
+                <img src="./images/tel-s.svg" alt="icon of telephone">
                 <p>+91 91813 23 2309</p>
             </div>
             <div class="location">
-                <img src="./images/location-s.svg" alt="">
+                <img src="./images/location-s.svg" alt="icon of location">
                 <p>Somewhere in the World</p>
             </div>
         </div>
@@ -350,13 +426,13 @@
                 <h3>Social Profiles</h3>
                 <div>
                     <div>
-                        <img src="./images/face-s.svg" alt="">
+                        <img src="./images/face-s.svg" alt="icon of facebook">
                     </div>
                     <div>
-                        <img src="./images/x-s.svg" alt="">
+                        <img src="./images/x-s.svg" alt="icon of x">
                     </div>
                     <div>
-                        <img src="./images/ins-s.svg" alt="">
+                        <img src="./images/ins-s.svg" alt="icon of instagram">
                     </div>
                 </div>            
             </div>

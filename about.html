@@ -13,23 +13,32 @@
     <title>Midterm Project</title>
 </head>
 <body>
+    <!-- Set skip links. -->
     <header>
+        <ul role="list" class="skip-links">
+            <li role="listitem"><a href="#navigator">Skip to header navigator</a></li>      
+            <li role="listitem"><a href="#skillbridge">Skip to main skillbridge</a></li>
+            <li role="listitem"><a href="#achievements">Skip to main achievements</a></li>
+            <li role="listitem"><a href="#goals">Skip to main goals</a></li>
+            <li role="listitem"><a href="#together">Skip to main together</a></li>
+            <li role="listitem"><a href="#footer">Skip to footer</a></li>
+        </ul>
        <div class="head">
             <!-- It has a fixed position. -->
             <div class="fixed">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
-            <div class="button-list">
+            <div class="button-list" id="navigator">
                 <div>
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
                     <nav class="nav1">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./course.html">Courses</a></li>
+                            <li><a href="./about.html">About Us</a></li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -41,7 +50,7 @@
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="drug-down-bar"></button> </li>
+                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
                     </ul>
                 </nav>
             </div>
@@ -52,8 +61,8 @@
     <!-- The main part of the body is centered -->
     <main>
         <div class="main">
-            
-            <div class="skillbridge">
+            <!-- The main part could be devided four parts. -->
+            <div class="skillbridge" id="skillbridge">
                 <div class="title"><h1>About Skillbridge</h1></div>
                 <div class="content">
                     <P>
@@ -61,8 +70,8 @@
                     </P>
                 </div>
             </div>
-
-            <div class="achievements">
+            <!-- The achievements part and the goals part have the same pattern. -->
+            <div class="achievements" id="achievements">
                 <div class="head-part">
                     <div><h2>Achievements</h2></div>
                     <div><p>Our commitment to excellence has led us to achieve significant milestones along our journey. Here are some of our notable achievements</p></div>
@@ -70,7 +79,7 @@
                 <div class="details-part">
                     <div class="details-box">
                             <div class="details-logo">
-                                <img src="./images/crown.svg" alt="picture of crown">
+                                <img src="./images/crown.svg" alt="icon of crown">
                             </div>
                             <div>
                                 <h3>Trusted by Thousands</h3>
@@ -79,7 +88,7 @@
                     </div>
                     <div class="details-box">
                             <div class="details-logo">
-                                <img src="./images/collar.svg" alt="picture of collar">
+                                <img src="./images/collar.svg" alt="icon of collar">
                             </div>
                             <div>
                                 <h3>Award-Winnig Courses</h3>
@@ -88,7 +97,7 @@
                     </div>
                     <div class="details-box">
                             <div class="details-logo">
-                                <img src="./images/mask.svg" alt="picture of mask">
+                                <img src="./images/mask.svg" alt="icon of mask">
                             </div>
                             <div>
                                 <h3>Positive Student Feedback</h3>
@@ -97,7 +106,7 @@
                     </div>
                     <div class="details-box">
                         <div class="details-logo">
-                            <img src="./images/ligntening.svg" alt="picture of ligntening">
+                            <img src="./images/ligntening.svg" alt="icon of ligntening">
                         </div>
                         <div>
                             <h3>Industry Partnerships</h3>
@@ -107,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="goals">
+            <div class="goals" id="goals">
                 <div class="head-part">
                     <div><h2>Our Goals</h2></div>
                     <div><p>At SkillBridge, our goal is to empower individuals from all backgrounds to thrive in the world of design and development. We believe that education should be accessible and transformative, enabling learners to pursue their passions and make a meaningful impact.
@@ -116,7 +125,7 @@
                 <div class="details-part">
                     <div class="details-box">
                         <div class="details-logo">
-                            <img src="./images/bag.svg" alt="picture of bag">
+                            <img src="./images/bag.svg" alt="icon of bag">
                         </div>
                         <div>
                             <h3>Provide Practical Skills</h3>
@@ -125,7 +134,7 @@
                     </div>
                     <div class="details-box">
                         <div class="details-log">
-                            <img src="./images/book.svg" alt="picture of book">
+                            <img src="./images/book.svg" alt="icon of book">
                         </div>
                         <div>
                             <h3>Foster Creative Problem-Solving</h3>
@@ -134,7 +143,7 @@
                     </div>
                     <div class="details-box">
                         <div class="details-logo">
-                            <img src="./images/stamp.svg" alt="picture of stamp">
+                            <img src="./images/stamp.svg" alt="icon of stamp">
                         </div>
                         <div>
                             <h3>Promote Collaboration and Community</h3>
@@ -143,7 +152,7 @@
                     </div>
                     <div class="details-box">
                         <div class="details-logo">
-                            <img src="./images/bell.svg" alt="picture of bell">
+                            <img src="./images/bell.svg" alt="icon of bell">
                         </div>
                         <div>
                             <h3>Stay Ahead of the Curve</h3>
@@ -153,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="together-outer">
+            <div class="together-outer" id="together">
                 <img src="./images/together-background.svg" alt="together-bg">
                 <div class="together">
                     <div class="slogan">             
@@ -168,22 +177,22 @@
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div>
         <div class="logo-column">
             <div class="logo">
                 <img src="./images/logo-s.svg" alt="logo">
             </div>
             <div class="email">
-                <img src="./images/email-s.svg" alt="">
+                <img src="./images/email-s.svg" alt="icon of email">
                 <p>hello@skillbridge.com</p>
             </div>
             <div class="tel">
-                <img src="./images/tel-s.svg" alt="">
+                <img src="./images/tel-s.svg" alt="icon of telephone">
                 <p>+91 91813 23 2309</p>
             </div>
             <div class="location">
-                <img src="./images/location-s.svg" alt="">
+                <img src="./images/location-s.svg" alt="icon of location">
                 <p>Somewhere in the World</p>
             </div>
         </div>
@@ -207,13 +216,13 @@
                 <h3>Social Profiles</h3>
                 <div>
                     <div>
-                        <img src="./images/face-s.svg" alt="">
+                        <img src="./images/face-s.svg" alt="icon of facebook">
                     </div>
                     <div>
-                        <img src="./images/x-s.svg" alt="">
+                        <img src="./images/x-s.svg" alt="icon of x">
                     </div>
                     <div>
-                        <img src="./images/ins-s.svg" alt="">
+                        <img src="./images/ins-s.svg" alt="icon of instagram">
                     </div>
                 </div>            
             </div>

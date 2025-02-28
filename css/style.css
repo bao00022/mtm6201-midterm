@@ -16,6 +16,8 @@ div{
 button{
     white-space: nowrap;
 }
+
+    
 p{
     line-height: 1.5rem;
     font-weight: 400;
@@ -27,6 +29,25 @@ p{
     flex-direction: column;
     align-items: center;
 }
+
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skip-links a{
+    position: absolute;
+    top: -3em;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.skip-links a:focus{
+  top: 0;
+}
+
 .fixed{
     background-color: #FF9500;
     display: flex;
@@ -238,15 +259,18 @@ main{
 .banner2{
     margin: 40px 0;
     height: 40vw;
-    width: calc(100%-40px);
-    background-image: url(../images/brand2-s.png);
+    background-image: url(../images/brand2-780.png);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+@media screen and (min-width: 780px){
+    .banner2{
+        background-image: url(../images/brand2-1060.png);
+    }
+}
 /* #########################benefits######################## */
 /* Benefits, courses and testimonials have the same begining. */
 .benefits > .text > p, .courses > .text > p, .testimonials > .text > p{
@@ -281,6 +305,7 @@ main{
     padding: 20px;
     margin-bottom: 20px;
 }
+/* Use flex-grow to ensure the alignment. */
 .benefits .six >  p{
     flex-grow: 1;
 }
@@ -320,10 +345,18 @@ main{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
-.courses-choices .six img{
+
+.courses-choices .six picture{
     border-radius: 5px;
     height: 250px;
+    /* overflow: hidden; */
+}
+/* Use width to make sure the size of images. */
+.courses-choices .six picture img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .courses-choices .six .tag{
@@ -661,6 +694,7 @@ main{
 .questions .expended-question .answer{
     color: #9f9f9f;
 }
+/* Use flex-shrink to make sure it won't be transformed. */
 .questions .expended-question button, .questions .question button{
     width: 40px;
     height: 40px;
@@ -694,6 +728,7 @@ main{
 }
 
 /* #######################footer part##################### */
+/* There is no padding in the footer part. */
 footer{
     margin-top: 60px;
 }
@@ -854,14 +889,16 @@ footer > p{
     /* height: 300px; */
     gap: 10px;
 }
-.course-pictures img{
-    width: calc(33.3% - 6.7px);
-    aspect-ratio: 1 / 1;
+.course-pictures picture{
+    /* width: calc(33.3% - 6.7px); */
+    flex: 1;    /* flex-grow: 1, flex-shrink: 1 */
+}
+/* The width of img is used to make sure the layout. */
+.course-pictures picture img{
+    aspect-ratio: 1 / 1;     /* Length-to-width ratio 1:1 */
+    width: 100%;
     object-fit: cover;
 }
-
-
-
 .courses-general .tag-author{
     padding: 20px 0;
     display: flex;
