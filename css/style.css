@@ -286,6 +286,7 @@ main{
     flex: 1;
     padding: 10px;
     text-align: center;
+    border-radius: 0;
     border-right: 1px solid #F1F1F3;
 }
 .brand .brand-border:last-child{
