@@ -28,7 +28,7 @@
         </ul>
        <div class="head">
             <!-- It has a fixed position. -->
-            <div class="fixed">
+            <div class="fixed" role="alert">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
@@ -37,7 +37,7 @@
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
-                    <nav class="nav1">
+                    <nav class="nav1" aria-label="Main Navigation">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./course.html">Courses</a></li>
@@ -48,24 +48,36 @@
                     </nav>
                 </div>
                 
-                <nav class="nav2">
+                <nav class="nav2" aria-label="User Navigation">
                     <ul>
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
+                        <li><button id="mobile-nav-btn"><span class="material-symbols-outlined">menu</span></button></li>
                     </ul>
                 </nav>
             </div>
-
+            <!-- nav3 is for mobile button expand use -->
+            <nav id="nav3" class="nav3" aria-label="Mobile Navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
        </div>
     </header>
+
+
+
 
     <!-- The main part of the body is centered -->
     <main>
         <div class="main">
             
-            <div class="banner1" id="banner1">
+            <div class="banner1" id="banner1" role="banner" aria-label="Course promotion banner">
                 <div class="slogan">
                     <div class="unlock">
                         <img class="sprinkle" src="./images/sprinkle-s.svg" alt="image of sprinkle">
@@ -84,7 +96,7 @@
                         </ul>
                     </div>
                 </div> 
-                <div class="brand">
+                <div class="brand" role="region">
                     <!-- use divs to set right borders of logos. -->
                      <div class="brand-border">
                         <img src="./images/zapier-s.svg" alt="icon of zapier">
@@ -111,19 +123,19 @@
            </div>
     
            <!-- Use background image. -->
-           <div class="banner2" id="banner2">
+           <div class="banner2" id="banner2" role="banner" aria-label="Call to action banner">
             <img class="banner2-button" src="./images/brand2-button-s.svg" alt="image of button">  
            </div>
 
-           <div class="benefits" id="benefits">
+           <div class="benefits" id="benefits" role="region">
                 <h1>Benefits</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <button>View All</button>
                 </div>                
-                <div class="benefits-choice">
+                <div class="benefits-choice" role="list">
                     <!-- Six dives have the same pattern. -->
-                    <div class="six benefits-01">
+                    <div class="six benefits-01" role="listitem">
                         <div class="order">
                             <h1>01</h1>
                         </div>
@@ -136,7 +148,7 @@
                         </div> 
                     </div>
 
-                    <div class="six benefits-02">
+                    <div class="six benefits-02" role="listitem">
                         <div class="order">
                             <h1>02</h1>
                         </div>
@@ -149,7 +161,7 @@
                         </div> 
                     </div>
 
-                    <div class="six benefits-03">
+                    <div class="six benefits-03" role="listitem">
                         <div class="order">
                             <h1>03</h1>
                         </div>
@@ -162,7 +174,7 @@
                         </div> 
                     </div>
 
-                    <div class="six benefits-04">
+                    <div class="six benefits-04" role="listitem">
                         <div class="order">
                             <h1>04</h1>
                         </div>
@@ -175,7 +187,7 @@
                         </div> 
                     </div>
 
-                    <div class="six benefits-05">
+                    <div class="six benefits-05" role="listitem">
                         <div class="order">
                             <h1>05</h1>
                         </div>
@@ -188,7 +200,7 @@
                         </div> 
                     </div>
 
-                    <div class="six benefits-06">
+                    <div class="six benefits-06" role="listitem">
                         <div class="order">
                             <h1>06</h1>
                         </div>
@@ -203,16 +215,16 @@
                 </div>     
            </div>
 
-           <div class="courses" id="courses">
+           <div class="courses" id="courses" role="region">
                 <h1>Our Courses</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     <button>View All</button>
                 </div>
                 
-                <div class="courses-choices">
+                <div class="courses-choices" role="list">
                    <!-- Every div has the same pattern. -->
-                    <div class="six courses-01">
+                    <div class="six courses-01" role="listitem">
                         <!-- 2 image sizes for optimizing images for small and large screens.-->
                         <picture>                     
                             <source srcset="./images/john-360.png" media="(min-width:780px)">
@@ -234,7 +246,7 @@
                         </div>
                     </div>
 
-                    <div class="six courses-02">
+                    <div class="six courses-02" role="listitem">
                         <picture>                     
                             <source srcset="./images/emily-1060.png" media="(min-width:780px)">
                             <source srcset="./images/emily-780.png" media="(max-width:780px)">
@@ -254,7 +266,7 @@
                         </div>
                     </div>
 
-                    <div class="six courses-03">
+                    <div class="six courses-03" role="listitem">
                         <picture>                     
                             <source srcset="./images/david-360.png" media="(min-width:780px)">
                             <source srcset="./images/david-280.png" media="(max-width:780px)">
@@ -274,7 +286,7 @@
                         </div>
                     </div>
 
-                    <div class="six courses-04">
+                    <div class="six courses-04" role="listitem">
                         <picture>                     
                             <source srcset="./images/david-360.png" media="(min-width:780px)">
                             <source srcset="./images/david-280.png" media="(max-width:780px)">
@@ -295,7 +307,7 @@
                         </div>
                     </div>
 
-                    <div class="six courses-05">
+                    <div class="six courses-05" role="listitem">
                         <picture>                     
                             <source srcset="./images/sarah-1060.png" media="(min-width:780px)">
                             <source srcset="./images/sarah-780.png" media="(max-width:780px)">
@@ -316,7 +328,7 @@
                         </div>
                     </div>
 
-                    <div class="six courses-06">
+                    <div class="six courses-06" role="listitem">
                         <picture>                     
                             <source srcset="./images/michal-1060.png" media="(min-width:780px)">
                             <source srcset="./images/michal-780.png" media="(max-width:780px)">
@@ -341,7 +353,7 @@
                 </div>
            </div>
 
-           <div class="testimonials" id="testimonials">
+           <div class="testimonials" id="testimonials" role="region">
                 <h1>Our testimonials</h1>
                 <div class="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
@@ -349,8 +361,8 @@
                 </div>               
            <!-- The four divs share the same pattern. -->            
            <!-- Add a div to change the display pattern in the desktop versoin. -->
-                <div class="grid">              
-                    <div class="testimonials-words">
+                <div class="grid" role="list">              
+                    <div class="testimonials-words" role="listitem">
                             <div class="text">
                                 <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                             </div>
@@ -367,7 +379,7 @@
                             </div>
                     </div>
 
-                    <div class="testimonials-words">
+                    <div class="testimonials-words" role="listitem">
                             <div class="text">
                                 <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                             </div>
@@ -384,7 +396,7 @@
                             </div>
                     </div>    
 
-                    <div class="testimonials-words">
+                    <div class="testimonials-words" role="listitem">
                             <div class="text">
                                 <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                             </div>
@@ -401,7 +413,7 @@
                             </div>
                     </div>
 
-                    <div class="testimonials-words">
+                    <div class="testimonials-words" role="listitem">
                                 <div class="text">
                                     <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
                                 </div>
@@ -420,7 +432,7 @@
                 </div>
            </div>
 
-           <div class="pricing" id="pricing">
+           <div class="pricing" id="pricing" role="region">
                 <div class="price-choices">
                         <h1>Our Pricing</h1>
                         <div>
@@ -436,8 +448,8 @@
 
                         
                 <!-- Use span to seperate a paragraph. -->
-                <div class="pricing-plan">
-                    <div class="free-plan">
+                <div class="pricing-plan" role="list">
+                    <div class="free-plan" role="listitem">
                         <div class="plan-title"><p>Free Plan</p></div>
                         <div class="plan-content"><p class="money">$0<span>/month</span></p></div>
                         <div class="features">
@@ -475,7 +487,7 @@
                             <div class="started"><a href="#">Get Started</a></div> 
                         </div>                           
                     </div>
-                    <div class="pro-plan">
+                    <div class="pro-plan" role="listitem">
                         <div class="plan-title"><p>Pro Plan</p></div>
                         <div class="plan-content"><p class="money">$79<span>/month</span></p></div>
 
@@ -517,7 +529,7 @@
                 </div>                                   
            </div>
        
-           <div class="questions" id="questions">
+           <div class="questions" id="questions" role="region">
                 <div>
                     <h1>Frequently Asked Questions</h1>
                     <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
@@ -526,33 +538,33 @@
                     </div>
                 </div>
                <!-- The first div is an expended pattern compaired to other dives. -->
-                <div>
-                    <div class="expended-question">
-                        <div class="ask">
+                <div role="accordion">
+                    <div class="expended-question" role="region">
+                        <div class="ask" role="button">
                             <p>Can I enroll in multiple courses at once?</p>
                             <button><span class="material-symbols-outlined">close</span></button>
                         </div>
                         <div class="answer">
                             <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
                         </div>
-                        <div class="enroll">
+                        <div class="enroll" role="button">
                             <p>Enrollment Process for Different Courses</p>
                             <button><span class="material-symbols-outlined">arrow_forward</span></button>
                         </div>
                     </div>
-                    <div class="question">
+                    <div class="question" role="button">
                         <p>What kind of support can I expect from instructors?</p>
                         <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="question">
+                    <div class="question" role="button">
                         <p>Are the courses self-paced or do they have specific start and end dates?</p>
                         <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="question">
+                    <div class="question" role="button">
                         <p>Are there any prerequisites for the courses?</p>
                         <button><span class="material-symbols-outlined">add</span></button>
                     </div>
-                    <div class="question">
+                    <div class="question" role="button">
                         <p>Can I download the course materials for offline access?</p>
                         <button><span class="material-symbols-outlined">add</span></button>
                     </div>
@@ -561,24 +573,25 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <div>
         <div class="logo-column">
-            <div class="logo">
-                <img src="./images/logo-s.svg" alt="logo">
-            </div>
-            <div class="email">
-                <img src="./images/email-s.svg" alt="icon of email">
-                <p>hello@skillbridge.com</p>
-            </div>
-            <div class="tel">
-                <img src="./images/tel-s.svg" alt="icon of telephone">
-                <p>+91 91813 23 2309</p>
-            </div>
-            <div class="location">
-                <img src="./images/location-s.svg" alt="icon of location">
-                <p>Somewhere in the World</p>
-            </div>
+            <!-- use schema to describe the company information -->
+            <ul role="list" itemscope itemtype="https://schema.org/Organization">
+                <li role="listitem" itemprop="logo" class="logo">
+                    <img src="./images/logo-s.svg" alt="logo">
+                </li>
+                <li role="listitem" itemprop="email" class="email">
+                    <img src="./images/email-s.svg" alt="icon of email"> hello@skillbridge.com
+                </li>
+                <li role="listitem" itemprop="telephone" class="tel">
+                    <img src="./images/tel-s.svg" alt="icon of telephone"> +91 91813 23 2309
+                </li>
+                <li role="listitem" itemprop="location" class="location">
+                    <img src="./images/location-s.svg" alt="icon of location"> Somewhere in the World
+                </li>
+            </ul>
+
         </div>
         <!-- Add a div to do the different layout. -->
         <div class="home-about-social">
@@ -613,7 +626,8 @@
             </div>
         </div>
         </div>
-        <p>© 2023 Skillbridge. All rights reserved.</p>
+        <p role="contentinfo">© 2023 Skillbridge. All rights reserved.</p>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

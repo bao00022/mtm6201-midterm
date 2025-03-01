@@ -25,7 +25,7 @@
         </ul>
        <div class="head">
             <!-- It has a fixed position. -->
-            <div class="fixed">
+            <div class="fixed" role="alert">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
@@ -34,7 +34,7 @@
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
-                    <nav class="nav1">
+                    <nav class="nav1" aria-label="Main Navigation">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./course.html">Courses</a></li>
@@ -45,16 +45,25 @@
                     </nav>
                 </div>
                 
-                <nav class="nav2">
+                <nav class="nav2" aria-label="User Navigation">
                     <ul>
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
+                        <li><button id="mobile-nav-btn"><span class="material-symbols-outlined">menu</span></button></li>
                     </ul>
                 </nav>
             </div>
-
+            <!-- nav3 is for mobile button expand use -->
+            <nav id="nav3" class="nav3" aria-label="Mobile Navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
        </div>
     </header>
 
@@ -62,7 +71,7 @@
     <main>
         <div class="main">
             <!-- The main part could be devided four parts. -->
-            <div class="skillbridge" id="skillbridge">
+            <div class="skillbridge" id="skillbridge" role="region">
                 <div class="title"><h1>About Skillbridge</h1></div>
                 <div class="content">
                     <P>
@@ -71,13 +80,13 @@
                 </div>
             </div>
             <!-- The achievements part and the goals part have the same pattern. -->
-            <div class="achievements" id="achievements">
+            <div class="achievements" id="achievements" role="region">
                 <div class="head-part">
                     <div><h2>Achievements</h2></div>
                     <div><p>Our commitment to excellence has led us to achieve significant milestones along our journey. Here are some of our notable achievements</p></div>
                 </div>
-                <div class="details-part">
-                    <div class="details-box">
+                <div class="details-part" role="list">
+                    <div class="details-box" role="listitem">
                             <div class="details-logo">
                                 <img src="./images/crown.svg" alt="icon of crown">
                             </div>
@@ -86,7 +95,7 @@
                                 <p>We have successfully served thousands of students, helping them unlock their potential and achieve their career goals.</p>
                             </div> 
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                             <div class="details-logo">
                                 <img src="./images/collar.svg" alt="icon of collar">
                             </div>
@@ -95,7 +104,7 @@
                                 <p>Our courses have received recognition and accolades in the industry for their quality, depth of content, and effective teaching methodologies.</p>
                             </div>
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                             <div class="details-logo">
                                 <img src="./images/mask.svg" alt="icon of mask">
                             </div>
@@ -104,7 +113,7 @@
                                 <p>We take pride in the positive feedback we receive from our students, who appreciate the practicality and relevance of our course materials.</p>
                             </div>
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                         <div class="details-logo">
                             <img src="./images/ligntening.svg" alt="icon of ligntening">
                         </div>
@@ -116,14 +125,14 @@
                 </div>
             </div>
 
-            <div class="goals" id="goals">
+            <div class="goals" id="goals" role="region">
                 <div class="head-part">
                     <div><h2>Our Goals</h2></div>
                     <div><p>At SkillBridge, our goal is to empower individuals from all backgrounds to thrive in the world of design and development. We believe that education should be accessible and transformative, enabling learners to pursue their passions and make a meaningful impact.
                         Through our carefully crafted courses, we aim to</p></div>
                 </div>
-                <div class="details-part">
-                    <div class="details-box">
+                <div class="details-part" role="list">
+                    <div class="details-box" role="listitem">
                         <div class="details-logo">
                             <img src="./images/bag.svg" alt="icon of bag">
                         </div>
@@ -132,7 +141,7 @@
                             <p>We focus on delivering practical skills that are relevant to the current industry demands. Our courses are designed to equip learners with the knowledge and tools needed to excel in their chosen field.</p>
                         </div>
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                         <div class="details-log">
                             <img src="./images/book.svg" alt="icon of book">
                         </div>
@@ -141,7 +150,7 @@
                             <p>We encourage creative thinking and problem-solving abilities, allowing our students to tackle real-world challenges with confidence and innovation.</p>
                         </div>
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                         <div class="details-logo">
                             <img src="./images/stamp.svg" alt="icon of stamp">
                         </div>
@@ -150,7 +159,7 @@
                             <p>We believe in the power of collaboration and peer learning. Our platform fosters a supportive and inclusive community where learners can connect, share insights, and grow together.</p>
                         </div>
                     </div>
-                    <div class="details-box">
+                    <div class="details-box" role="listitem">
                         <div class="details-logo">
                             <img src="./images/bell.svg" alt="icon of bell">
                         </div>
@@ -162,7 +171,7 @@
                 </div>
             </div>
 
-            <div class="together-outer" id="together">
+            <div class="together-outer" id="together" role="region">
                 <img src="./images/together-background.svg" alt="together-bg">
                 <div class="together">
                     <div class="slogan">             
@@ -177,24 +186,25 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <div>
         <div class="logo-column">
-            <div class="logo">
-                <img src="./images/logo-s.svg" alt="logo">
-            </div>
-            <div class="email">
-                <img src="./images/email-s.svg" alt="icon of email">
-                <p>hello@skillbridge.com</p>
-            </div>
-            <div class="tel">
-                <img src="./images/tel-s.svg" alt="icon of telephone">
-                <p>+91 91813 23 2309</p>
-            </div>
-            <div class="location">
-                <img src="./images/location-s.svg" alt="icon of location">
-                <p>Somewhere in the World</p>
-            </div>
+            <!-- use schema to describe the company information -->
+            <ul role="list" itemscope itemtype="https://schema.org/Organization">
+                <li role="listitem" itemprop="logo" class="logo">
+                    <img src="./images/logo-s.svg" alt="logo">
+                </li>
+                <li role="listitem" itemprop="email" class="email">
+                    <img src="./images/email-s.svg" alt="icon of email"> hello@skillbridge.com
+                </li>
+                <li role="listitem" itemprop="telephone" class="tel">
+                    <img src="./images/tel-s.svg" alt="icon of telephone"> +91 91813 23 2309
+                </li>
+                <li role="listitem" itemprop="location" class="location">
+                    <img src="./images/location-s.svg" alt="icon of location"> Somewhere in the World
+                </li>
+            </ul>
+
         </div>
         <div class="home-about-social">
             <div class="home-about">
@@ -228,7 +238,8 @@
             </div>
         </div>
         </div>
-        <p>© 2023 Skillbridge. All rights reserved.</p>
+        <p role="contentinfo">© 2023 Skillbridge. All rights reserved.</p>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

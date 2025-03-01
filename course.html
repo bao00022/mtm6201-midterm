@@ -26,7 +26,7 @@
         </ul>
        <div class="head">
             <!-- It has a fixed position. -->
-            <div class="fixed">
+            <div class="fixed" role="alert">
                 <p>Free Courses 🌟 Sale Ends Soon, Get it now</p>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
@@ -35,7 +35,7 @@
                     <div class="logo">
                         <img src="./images/logo-s.svg" alt="logo">
                     </div>
-                    <nav class="nav1">
+                    <nav class="nav1" aria-label="Main Navigation">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./course.html">Courses</a></li>
@@ -46,16 +46,25 @@
                     </nav>
                 </div>
                 
-                <nav class="nav2">
+                <nav class="nav2" aria-label="User Navigation">
                     <ul>
                         <!-- The first two are links and have hover effect. -->
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">Login</a></li>
-                        <li><button><img src="./images/drug-down-s.svg" alt="picture of drug-down-bar"></button> </li>
+                        <li><button id="mobile-nav-btn"><span class="material-symbols-outlined">menu</span></button></li>
                     </ul>
                 </nav>
             </div>
-
+            <!-- nav3 is for mobile button expand use -->
+            <nav id="nav3" class="nav3" aria-label="Mobile Navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./course.html">Courses</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
        </div>
     </header>
 
@@ -72,9 +81,9 @@
                 </div>
             </div>
           
-            <div class="course-introduction">
+            <div class="course-introduction" role="region">
                 <!-- The following moudules have the same pattern. -->
-                <div class="course-general" id="web-design">
+                <div class="course-general" id="web-design" role="region">
                    <div class="course-head">
                         <div class="course-title">
                             <div><h2>Web Design Fundamntals</h2></div>
@@ -85,7 +94,7 @@
                         <button>View Course</button>
                     </div>  
                     <!-- 2 image sizes for optimizing images for small and large screens.-->                   
-                    <div class="course-pictures">
+                    <div class="course-pictures" role="group">
                         <picture>                     
                             <source srcset="./images/john-360.png" media="(min-width:780px)">
                             <source srcset="./images/john-280.png" media="(max-width:780px)">
@@ -102,34 +111,34 @@
                             <img src="./images/computer-780.png" alt="image of one person doing low fidelity">
                         </picture>
                     </div>
-                    <div class="tag-author">
+                    <div class="tag-author" role="group">
                         <div class="tag">
                             <div><p>4 weeks</p></div>
                             <div><p>Beginner</p></div>
                         </div>
                        <div><p class="author">By John Smith</p></div>
                     </div>
-                    <div class="curriculum">
+                    <div class="curriculum" role="region">
                         <div class="curriculum-title"><h3>Curriculum</h3></div>
                         <!-- Add a div to do the row and the column layout. -->
-                        <div class="curriculum-details">
-                            <div class="details">
+                        <div class="curriculum-details" role="list">
+                            <div class="details" role="listitem">
                                 <div><h3>01</h3></div>
                                 <div><p>Introduction to HTML</p></div>
                             </div>
-                            <div class="details">
+                            <div class="details" role="listitem">
                                 <div><h3>02</h3></div>
                                 <div><p>Styling with CSS</p></div>
                             </div>
-                            <div class="details">
+                            <div class="details" role="listitem">
                                 <div><h3>03</h3></div>
                                 <div><p>Introduction to Responsive Design</p></div>
                             </div>
-                            <div class="details">
+                            <div class="details" role="listitem">
                                 <div><h3>04</h3></div>
                                 <div><p>Design Principles for Web</p></div>
                             </div>
-                            <div class="details">
+                            <div class="details" role="listitem">
                                 <div><h3>05</h3></div>
                                 <div><p>Building a Basic Website</p></div>
                             </div>
@@ -137,7 +146,7 @@
                     </div>
                 </div>
            
-                <div class="course-general" id="ui/ux-design">
+                <div class="course-general" id="ui/ux-design" role="region">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>UI/UX Design</h2></div>
@@ -147,7 +156,7 @@
                          </div>  
                          <button>View Course</button>
                      </div>                   
-                     <div class="course-pictures">
+                     <div class="course-pictures" role="group">
                          <!-- <img src="./images/emily-s.png" alt=""> -->
                          <picture>                     
                             <source srcset="./images/emily-1060.png" media="(min-width:780px)">
@@ -167,33 +176,33 @@
                             <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
                         </picture>
                      </div>
-                     <div class="tag-author">
+                     <div class="tag-author" role="group">
                          <div class="tag">
                              <div><p>6 weeks</p></div>
                              <div><p>Intermediate</p></div>
                          </div>
                         <div><p class="author">By Emily Johnson</p></div>
                      </div>
-                     <div class="curriculum">
+                     <div class="curriculum" role="region">
                          <div class="curriculum-title"><h3>Curriculum</h3></div>
-                         <div class="curriculum-details">
-                             <div class="details">
+                         <div class="curriculum-details" role="list">
+                             <div class="details" role="listitem">
                                  <div><h3>01</h3></div>
                                  <div><p>Introduction to UI/UX Design</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>02</h3></div>
                                  <div><p>User Research and Personas</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>03</h3></div>
                                  <div><p>Wireframing and Prototyping</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>04</h3></div>
                                  <div><p>Visual Design and Branding</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>05</h3></div>
                                  <div><p>Usability Testing and Iteration</p></div>
                              </div>
@@ -201,7 +210,7 @@
                      </div>
                  </div>    
             
-                 <div class="course-general" id="mobile-app">
+                 <div class="course-general" id="mobile-app" role="region">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Mobile App Development</h2></div>
@@ -211,7 +220,7 @@
                          </div>  
                          <button>View Course</button>
                      </div>                   
-                     <div class="course-pictures">
+                     <div class="course-pictures" role="group">
                          <picture>                     
                             <source srcset="./images/david-360.png" media="(min-width:780px)">
                             <source srcset="./images/david-280.png" media="(max-width:780px)">
@@ -228,7 +237,7 @@
                             <img src="./images/emily-780.png" alt="image of one person doing low fidelity">
                         </picture>
                      </div>
-                     <div class="tag-author">
+                     <div class="tag-author" role="group">
                          <div class="tag">
                              <div><p>8 weeks</p></div>
                              <div><p>Intermediate</p></div>
@@ -237,24 +246,24 @@
                      </div>
                      <div class="curriculum">
                          <div class="curriculum-title"><h3>Curriculum</h3></div>
-                         <div class="curriculum-details">
-                             <div class="details">
+                         <div class="curriculum-details" role="list">
+                             <div class="details" role="listitem">
                                  <div><h3>01</h3></div>
                                  <div><p>Introduction to Mobile App Development</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>02</h3></div>
                                  <div><p>Fundamentals of Swift Programming (iOS)</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>03</h3></div>
                                  <div><p>Fundamentals of Kotlin Programming (Android)</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>04</h3></div>
                                  <div><p>Building User Interfaces</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>05</h3></div>
                                  <div><p>App Deployment and Testing</p></div>
                              </div>
@@ -262,7 +271,7 @@
                      </div>
                  </div>
 
-                 <div class="course-general" id="graphic-design">
+                 <div class="course-general" id="graphic-design" role="region">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Graphic Design for Beginners</h2></div>
@@ -272,7 +281,7 @@
                          </div>  
                          <button>View Course</button>
                      </div>                   
-                     <div class="course-pictures">
+                     <div class="course-pictures" role="group">
                          <picture>                     
                             <source srcset="./images/sarah-1060.png" media="(min-width:780px)">
                             <source srcset="./images/sarah-780.png" media="(max-width:780px)">
@@ -289,7 +298,7 @@
                             <img src="./images/creative-780.png" alt="image of the scrren of a computer">
                         </picture>
                      </div>
-                     <div class="tag-author">
+                     <div class="tag-author" role="group">
                          <div class="tag">
                              <div><p>10 weeks</p></div>
                              <div><p>Beginner</p></div>
@@ -298,24 +307,24 @@
                      </div>
                      <div class="curriculum">
                          <div class="curriculum-title"><h3>Curriculum</h3></div>
-                         <div class="curriculum-details">
-                             <div class="details">
+                         <div class="curriculum-details" role="list">
+                             <div class="details" role="listitem">
                                  <div><h3>01</h3></div>
                                  <div><p>Introduction to Graphic Design</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>02</h3></div>
                                  <div><p>Typography and Color Theory</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>03</h3></div>
                                  <div><p>Layout Design and Composition</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>04</h3></div>
                                  <div><p>Image Editing and Manipulation</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>05</h3></div>
                                  <div><p>Designing for Print and Digital Media</p></div>
                              </div>
@@ -323,7 +332,7 @@
                      </div>
                  </div>
 
-                 <div class="course-general" id="front-end">
+                 <div class="course-general" id="front-end" role="region">
                     <div class="course-head">
                          <div class="course-title">
                              <div><h2>Font-End Web Development</h2></div>
@@ -333,7 +342,7 @@
                          </div>  
                          <button>View Course</button>
                      </div>                   
-                     <div class="course-pictures">
+                     <div class="course-pictures" role="group">
                          <picture>                     
                             <source srcset="./images/michal-1060.png" media="(min-width:780px)">
                             <source srcset="./images/michal-780.png" media="(max-width:780px)">
@@ -350,7 +359,7 @@
                             <img src="./images/css-780.png" alt="image of a woman">
                         </picture>
                      </div>
-                     <div class="tag-author">
+                     <div class="tag-author" role="group">
                          <div class="tag">
                              <div><p>10 weeks</p></div>
                              <div><p>Intermediate</p></div>
@@ -359,24 +368,24 @@
                      </div>
                      <div class="curriculum">
                          <div class="curriculum-title"><h3>Curriculum</h3></div>
-                         <div class="curriculum-details">
-                             <div class="details">
+                         <div class="curriculum-details" role="list">
+                             <div class="details" role="listitem">
                                  <div><h3>01</h3></div>
                                  <div><p>HTML Fundamentals</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>02</h3></div>
                                  <div><p>CSS Styling and Layouts</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>03</h3></div>
                                  <div><p>JavaScript Basics</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>04</h3></div>
                                  <div><p>Building Responsive Websites</p></div>
                              </div>
-                             <div class="details">
+                             <div class="details" role="listitem">
                                  <div><h3>05</h3></div>
                                  <div><p>Introduction to Bootstrap and React</p></div>
                              </div>
@@ -387,24 +396,25 @@
         </div>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <div>
         <div class="logo-column">
-            <div class="logo">
-                <img src="./images/logo-s.svg" alt="logo">
-            </div>
-            <div class="email">
-                <img src="./images/email-s.svg" alt="icon of email">
-                <p>hello@skillbridge.com</p>
-            </div>
-            <div class="tel">
-                <img src="./images/tel-s.svg" alt="icon of telephone">
-                <p>+91 91813 23 2309</p>
-            </div>
-            <div class="location">
-                <img src="./images/location-s.svg" alt="icon of location">
-                <p>Somewhere in the World</p>
-            </div>
+            <!-- use schema to describe the company information -->
+            <ul role="list" itemscope itemtype="https://schema.org/Organization">
+                <li role="listitem" itemprop="logo" class="logo">
+                    <img src="./images/logo-s.svg" alt="logo">
+                </li>
+                <li role="listitem" itemprop="email" class="email">
+                    <img src="./images/email-s.svg" alt="icon of email"> hello@skillbridge.com
+                </li>
+                <li role="listitem" itemprop="telephone" class="tel">
+                    <img src="./images/tel-s.svg" alt="icon of telephone"> +91 91813 23 2309
+                </li>
+                <li role="listitem" itemprop="location" class="location">
+                    <img src="./images/location-s.svg" alt="icon of location"> Somewhere in the World
+                </li>
+            </ul>
+
         </div>
         <div class="home-about-social">
             <div class="home-about">
@@ -438,7 +448,8 @@
             </div>
         </div>
         </div>
-        <p>© 2023 Skillbridge. All rights reserved.</p>
+        <p role="contentinfo">© 2023 Skillbridge. All rights reserved.</p>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

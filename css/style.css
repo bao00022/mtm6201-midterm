@@ -70,7 +70,6 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
     align-items: center;
     padding-bottom: 20px;
     border-bottom: 1px solid #F1F1F3;
@@ -111,10 +110,9 @@ p{
     line-height: 40px;
     text-align: center;
 }
-.button-list .nav2 ul li button{
+#mobile-nav-btn {
     width: 40px;
     height: 40px;
-    /* This is how to center a picture. */
     display: flex;
     justify-content: right;
     align-items: center;
@@ -124,10 +122,51 @@ p{
     background-color: #FF9500;
     color: white;
 }
-@media screen and (max-width: 780px) {
-    .button-list .nav1 {
+.button-list .nav1 {
     display: none;
-}  
+}
+
+@media screen and (min-width: 780px) {
+    .button-list .nav1 {
+        display: block;
+    }
+    #mobile-nav-btn {
+        display: none;
+    }
+}
+
+
+/* #nav3 visibility is hidden by default, another active classname will added to this element when user click the menu button, this action is implemented by javascript */
+.nav3 {
+    position: relative;
+    width: calc(100% - 20px);
+    z-index: 1;
+    display: none;
+}
+.nav3 ul{
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.nav3 ul li a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    display: block;
 }
 
 
@@ -327,6 +366,14 @@ main{
     justify-content: center;
     align-items: center;
 }
+/* Use animations to enhance the user experience. */
+.benefits .arrow-border{
+    transition: transform 2s, background-color 2s;
+}
+.benefits .arrow-border:hover{
+    transform:  scale(1.5);
+    background-color: #FF9500;
+}
 @media screen and (min-width: 780px) {
     .benefits-choice{
         display: grid;
@@ -387,7 +434,7 @@ main{
 .courses-choices .author p{
     font-size: 1.2rem;
 }
-。courses-choices h2{
+.courses-choices h2{
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -405,6 +452,21 @@ main{
     align-items: center;
     background-color: #F1F1F3;
 }
+/* Use noticeable animations to enhance the user experience. */
+@keyframes border {
+    from {
+        border: 1px solid #FCFCFD;
+    }
+    to {
+        border:10px solid #FF9500;
+    }
+}
+.courses-choices .get:hover{
+    animation-name: border;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 @media screen and (min-width: 780px) {
     .courses-choices{
         display: grid;
@@ -741,11 +803,16 @@ footer > div{
     border-bottom: 1px solid #F1F1F3;
 }
 footer .logo{
-    margin-bottom: 30px;
-}
-footer .email, .tel, .location{
-    display: flex;
     margin-bottom: 10px;
+}
+footer .email, footer .tel, footer .location{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+footer .email img, footer .tel img, footer .location img{
+    width: 20px;
+    margin-right: 10px;
 }
 .home-about{
     display: flex;
