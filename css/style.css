@@ -275,8 +275,7 @@ main{
 }
 
 .brand{
-    padding: 20px;
-    height: 80px;
+    padding: 10px;
     border: #F1F1F3;
     display: flex;
     justify-content: space-around;
@@ -284,8 +283,13 @@ main{
     background-color: #FCFCFD ;
 }
 .brand .brand-border{
-    width:auto;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
     border-right: 1px solid #F1F1F3;
+}
+.brand .brand-border:last-child{
+    border: none;
 }
 @media screen and (max-width: 540px){
     .brand-border:nth-child(n+4) {
